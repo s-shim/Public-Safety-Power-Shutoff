@@ -1,0 +1,3543 @@
+l002.ib.bridges2.psc.edu
+2024-11-20 19:42:58.292917
+total risk = 1020
+Set parameter Username
+Set parameter LicenseID to value 762805
+Set parameter TokenServer to value "br017.ib.bridges2.psc.edu"
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst1.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xb1bdb488
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.222571e+02, 337 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  122.25714    0    8          -  122.25714      -     -    0s
+     0     0  190.53415    0   84          -  190.53415      -     -    1s
+     0     2  190.53415    0   84          -  190.53415      -     -    2s
+    11     9  332.06295    1   59          -  332.06295      -   0.4    5s
+    74    52  338.57214    1   80          -  338.57214      -  26.1   10s
+   160   111  342.75466    1   78          -  342.75466      -  25.5   18s
+   186   129  343.77607    1  102          -  343.77607      -  22.0   20s
+   391   298  350.40009   45   43          -  344.77778      -  33.6   26s
+   987   826  352.27470   49   67          -  344.77778      -  38.3   30s
+  1459  1291  359.76306   58   28          -  344.77778      -  33.9   35s
+  1649  1509  376.93333   66    3          -  344.77778      -  32.6   40s
+  1788  1636  381.46667   69   22          -  344.77778      -  32.2   45s
+  1902  1694  368.15530   66   36          -  344.77778      -  31.9   50s
+  1986  1799  363.87727   66   18          -  344.77778      -  31.5   56s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 1
+  MIR: 3
+  Flow cover: 19
+  Zero half: 42
+  Lazy constraints: 11883
+
+Explored 2062 nodes (64907 simplex iterations) in 60.93 seconds (10.73 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.450000000000e+02, gap -
+
+User-callback calls 8541, time in user-callback 52.52 sec
+### best bound = 345.0
+total risk = 1130
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst2.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x614d48b1
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.296267e+02, 326 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  129.62667    0    8          -  129.62667      -     -    0s
+     0     0  206.59773    0   98          -  206.59773      -     -    2s
+     0     0  245.80435    0   57          -  245.80435      -     -    2s
+     0     0  290.83529    0   33          -  290.83529      -     -    2s
+     0     0  327.47089    0   61          -  327.47089      -     -    4s
+     0     0  337.25230    0   53          -  337.25230      -     -    4s
+     0     0  337.99943    0   50          -  337.99943      -     -    4s
+     0     0  340.14524    0   44          -  340.14524      -     -    4s
+     0     0  341.49400    0   34          -  341.49400      -     -    4s
+     0     0  341.49400    0   34          -  341.49400      -     -    4s
+     0     0  341.73793    0   31          -  341.73793      -     -    4s
+     0     0  346.55167    0   57          -  346.55167      -     -    4s
+     0     0  347.19958    0   62          -  347.19958      -     -    4s
+     0     0  348.37832    0   48          -  348.37832      -     -    4s
+     0     0  349.84794    0   48          -  349.84794      -     -    4s
+     0     0  349.84794    0   53          -  349.84794      -     -    4s
+     0     0  349.86267    0   53          -  349.86267      -     -    4s
+     0     2  351.45956    0   53          -  351.45956      -     -    5s
+  1383  1505  424.84276   37   29          -  358.22850      -  18.3   10s
+  1802  1870  448.60543   45   16          -  358.22850      -  18.5   15s
+  1984  1983  411.25556   28   47          -  358.22850      -  18.6   20s
+  2220  2234  472.85490   59   18          -  358.22850      -  18.8   25s
+  2338  2320  399.02583   13   54          -  358.22850      -  19.1   30s
+  2495  2481  376.59767    8   76          -  358.80152      -  19.5   35s
+  2727  2679  403.49118   29    6          -  358.80152      -  19.2   41s
+  2853  2788  382.01825   13   52          -  358.80152      -  19.1   45s
+  2962  2859 infeasible   37               -  358.80152      -  19.1   51s
+  3074  2956  388.15218   14   57          -  358.80152      -  19.1   56s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 6
+  Clique: 5
+  MIR: 30
+  Flow cover: 1
+  Zero half: 4
+  Mod-K: 1
+  Lazy constraints: 15762
+
+Explored 3152 nodes (61720 simplex iterations) in 61.62 seconds (3.22 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.590000000000e+02, gap -
+
+User-callback calls 6996, time in user-callback 58.85 sec
+### best bound = 359.0
+total risk = 1050
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst3.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x3e893685
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.246676e+02, 344 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  124.66757    0    4          -  124.66757      -     -    0s
+     0     0  192.72500    0   76          -  192.72500      -     -    2s
+     0     0  224.37500    0   63          -  224.37500      -     -    2s
+     0     0  258.37843    0   61          -  258.37843      -     -    2s
+     0     0  295.65625    0   53          -  295.65625      -     -    3s
+     0     0  298.84583    0   54          -  298.84583      -     -    3s
+     0     0  300.86495    0   38          -  300.86495      -     -    3s
+     0     0  302.12089    0   42          -  302.12089      -     -    3s
+     0     0  302.27200    0   10          -  302.27200      -     -    3s
+     0     0  302.48093    0   30          -  302.48093      -     -    3s
+     0     0  302.66459    0   33          -  302.66459      -     -    3s
+     0     0  302.66459    0   33          -  302.66459      -     -    3s
+     0     2  302.66459    0   33          -  302.66459      -     -    4s
+   383   480  344.97500   14   34          -  311.58674      -  16.0    5s
+  1802  1891  322.20014    7   56          -  315.22103      -  14.1   10s
+  2237  2224  332.70000   12   49          -  315.22103      -  13.9   15s
+  2502  2452  335.18333   14   51          -  315.22103      -  14.0   20s
+  2886  2745  349.95402   14   52          -  315.22103      -  13.8   25s
+  3207  3080  347.63795   18   48          -  315.22103      -  13.6   30s
+  3341  3158 infeasible   29               -  315.22103      -  13.7   35s
+  3480  3325  349.65873   19   58          -  315.22103      -  13.9   40s
+  3621  3417  354.27624   15   69          -  315.22103      -  14.0   46s
+  3700  3517  349.50833   20   52          -  315.22103      -  14.1   50s
+  3835  3609 infeasible   57               -  315.22103      -  14.3   55s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 9
+  Clique: 7
+  MIR: 28
+  Zero half: 3
+  Relax-and-lift: 1
+  PSD: 1
+  Lazy constraints: 16735
+
+Explored 4013 nodes (58566 simplex iterations) in 60.14 seconds (3.62 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.160000000000e+02, gap -
+
+User-callback calls 8695, time in user-callback 57.15 sec
+### best bound = 316.0
+total risk = 994
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst4.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x6f45d61e
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.111977e+02, 328 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  111.19767    0    5          -  111.19767      -     -    0s
+     0     0  183.78750    0   75          -  183.78750      -     -    1s
+     0     0  209.95455    0   87          -  209.95455      -     -    2s
+     0     0  247.67353    0   42          -  247.67353      -     -    2s
+     0     0  275.02222    0   73          -  275.02222      -     -    3s
+     0     0  279.04482    0   69          -  279.04482      -     -    3s
+     0     0  286.00714    0   87          -  286.00714      -     -    3s
+     0     0  287.56648    0   67          -  287.56648      -     -    3s
+     0     0  288.76154    0   71          -  288.76154      -     -    3s
+     0     0  290.10648    0   68          -  290.10648      -     -    3s
+     0     0  290.35143    0   76          -  290.35143      -     -    3s
+     0     0  292.33205    0   73          -  292.33205      -     -    4s
+     0     0  292.51441    0   67          -  292.51441      -     -    4s
+     0     0  292.77920    0   33          -  292.77920      -     -    4s
+     0     0  294.98082    0   67          -  294.98082      -     -    4s
+     0     0  295.13681    0   66          -  295.13681      -     -    4s
+     0     0  296.58419    0   73          -  296.58419      -     -    4s
+     0     0  297.60128    0   73          -  297.60128      -     -    4s
+     0     0  297.60128    0   76          -  297.60128      -     -    4s
+     0     0  297.60128    0   73          -  297.60128      -     -    4s
+     0     2  297.78104    0   73          -  297.78104      -     -    4s
+    95   128  304.89311    7   66          -  304.20808      -  16.2    5s
+  1419  1488  333.33750   38   21          -  304.20808      -  14.8   10s
+  1768  1745  340.09336   45   28          -  304.20808      -  16.0   16s
+  1866  1797  332.91429   24   42          -  304.20808      -  16.4   20s
+  2063  2018  357.43000   54   21          -  304.20808      -  16.9   26s
+  2157  2102  331.56464   18   60          -  304.20808      -  17.0   30s
+  2236  2174  325.39180   20   62          -  304.20808      -  17.0   35s
+  2267  2206  368.75000   58   14          -  304.20808      -  17.1   42s
+  2333  2270  370.25000   59    7          -  304.20808      -  17.3   46s
+  2398  2333  370.50000   60    5          -  304.20808      -  17.4   50s
+  2505  2435  353.02593   32   36          -  304.20808      -  17.4   55s
+  2613  2529  376.77180   43   38          -  304.20808      -  17.3   60s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 4
+  Clique: 3
+  MIR: 29
+  Zero half: 10
+  Mod-K: 1
+  RLT: 1
+  Lazy constraints: 15822
+
+Explored 2634 nodes (46894 simplex iterations) in 62.46 seconds (2.75 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.050000000000e+02, gap -
+
+User-callback calls 5976, time in user-callback 60.18 sec
+### best bound = 305.0
+total risk = 959
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst5.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xeec25ef4
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.123077e+02, 342 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  112.30769    0    3          -  112.30769      -     -    0s
+     0     0  172.01200    0   84          -  172.01200      -     -    2s
+     0     0  187.22154    0   76          -  187.22154      -     -    2s
+     0     0  232.69012    0   52          -  232.69012      -     -    2s
+     0     0  270.10966    0   65          -  270.10966      -     -    3s
+     0     0  275.09145    0   56          -  275.09145      -     -    3s
+     0     0  275.70873    0   57          -  275.70873      -     -    3s
+     0     0  277.30265    0   71          -  277.30265      -     -    3s
+     0     0  277.52487    0   65          -  277.52487      -     -    3s
+     0     0  278.06942    0   45          -  278.06942      -     -    3s
+     0     0  278.12727    0   63          -  278.12727      -     -    3s
+     0     0  278.14897    0   60          -  278.14897      -     -    3s
+     0     2  278.14897    0   60          -  278.14897      -     -    4s
+   191   224  293.43956    9   50          -  285.97747      -  11.7    5s
+  1091  1184  314.12727   30    2          -  285.97747      -  20.3   10s
+  1547  1638  330.69460   41    7          -  285.97747      -  20.1   15s
+  1766  1765  313.97614   23   52          -  285.97747      -  19.7   20s
+  1859  1862  319.19591   25   51          -  285.97747      -  19.9   25s
+  1994  1981  328.13763   23   33          -  285.97747      -  20.3   30s
+  2101  2103  322.09583    9   62          -  285.97747      -  20.5   35s
+  2234  2219  335.33459   28   65          -  285.97747      -  20.7   41s
+  2314  2299  332.72027   28   48          -  285.97747      -  20.8   45s
+  2385  2379  359.09630   69    9          -  285.97747      -  20.7   50s
+  2496  2453  319.45000   19   55          -  285.97747      -  20.6   56s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 11
+  Clique: 10
+  MIR: 26
+  Flow cover: 5
+  Zero half: 3
+  RLT: 1
+  Relax-and-lift: 1
+  PSD: 4
+  Lazy constraints: 14946
+
+Explored 2579 nodes (54271 simplex iterations) in 60.44 seconds (2.44 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.860000000000e+02, gap -
+
+User-callback calls 5785, time in user-callback 58.43 sec
+### best bound = 286.0
+total risk = 1045
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst6.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x212c1dcf
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.338781e+02, 345 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  133.87812    0    3          -  133.87812      -     -    0s
+     0     0  202.80882    0   80          -  202.80882      -     -    2s
+     0     0  237.71210    0   94          -  237.71210      -     -    2s
+     0     0  279.03472    0   54          -  279.03472      -     -    2s
+     0     0  306.41800    0   81          -  306.41800      -     -    4s
+     0     0  314.97083    0   59          -  314.97083      -     -    4s
+     0     0  316.35072    0   50          -  316.35072      -     -    4s
+     0     0  316.86458    0   50          -  316.86458      -     -    4s
+     0     0  321.13622    0   92          -  321.13622      -     -    4s
+     0     0  323.01228    0   74          -  323.01228      -     -    4s
+     0     0  324.53551    0   79          -  324.53551      -     -    4s
+     0     0  324.53551    0   86          -  324.53551      -     -    4s
+     0     0  324.92883    0   85          -  324.92883      -     -    4s
+     0     2  324.92883    0   85          -  324.92883      -     -    4s
+     3     8  328.33704    2   74          -  325.14173      -  35.3    5s
+  1043  1125  359.41875   23   40          -  330.95088      -  19.8   10s
+  1436  1485  341.08079    7   87          -  332.33418      -  22.3   17s
+  1652  1670  345.90645    8  100          -  332.33418      -  22.3   20s
+  1707  1700  348.27368    9   83          -  332.33418      -  22.3   26s
+  2003  1946  367.38559   17   68          -  332.33418      -  22.1   30s
+  2267  2201  371.81892   17   81          -  332.33418      -  21.4   36s
+  2464  2409  360.11709   20   45          -  332.33418      -  20.9   42s
+  2560  2506  362.19561   22   41          -  332.33418      -  20.7   45s
+  2781  2717  371.55045   22   43          -  332.33418      -  20.4   50s
+  2942  2847  373.47878   24   40          -  332.33418      -  20.1   56s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 10
+  Clique: 6
+  MIR: 34
+  Zero half: 10
+  RLT: 1
+  Lazy constraints: 15445
+
+Explored 3044 nodes (62428 simplex iterations) in 61.71 seconds (3.28 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.330000000000e+02, gap -
+
+User-callback calls 6768, time in user-callback 59.23 sec
+### best bound = 333.0
+total risk = 1008
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst7.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x03881e28
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.351588e+02, 340 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  135.15882    0    8          -  135.15882      -     -    0s
+     0     0  188.50769    0   67          -  188.50769      -     -    2s
+     0     0  206.55714    0   48          -  206.55714      -     -    2s
+     0     0  240.96667    0   51          -  240.96667      -     -    2s
+     0     0  278.97267    0   75          -  278.97267      -     -    3s
+     0     0  282.24316    0   55          -  282.24316      -     -    3s
+     0     0  288.61959    0   11          -  288.61959      -     -    3s
+     0     0  295.37691    0   71          -  295.37691      -     -    3s
+     0     0  297.05149    0   72          -  297.05149      -     -    3s
+     0     0  300.50513    0   77          -  300.50513      -     -    3s
+     0     0  303.93052    0   84          -  303.93052      -     -    4s
+     0     0  305.32828    0   89          -  305.32828      -     -    4s
+     0     0  306.75631    0   89          -  306.75631      -     -    4s
+     0     0  306.75631    0   91          -  306.75631      -     -    4s
+     0     0  306.75631    0   91          -  306.75631      -     -    4s
+     0     2  306.75631    0   91          -  306.75631      -     -    4s
+    95   128  312.44223    6   70          -  309.48636      -  13.6    5s
+  1193  1265  355.62679   32   10          -  310.78658      -  16.5   11s
+  1316  1322  349.20152   26   36          -  310.78658      -  16.9   15s
+  1533  1548  386.45455   47   18          -  310.78658      -  17.2   20s
+  1708  1715  329.48763   10   71          -  311.28484      -  17.8   25s
+  1833  1831  333.68542   11   42          -  311.28484      -  17.8   30s
+  2021  2011  335.89375   12   37          -  311.28484      -  17.7   35s
+  2302  2251  341.12014   18   47          -  311.28484      -  17.3   40s
+  2520  2463  341.46389   19   56          -  311.28484      -  17.0   46s
+  2602  2538  342.15198   21   52          -  311.28484      -  16.9   51s
+  2683  2604  342.37778   23   34          -  311.28484      -  17.0   55s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 7
+  Clique: 6
+  MIR: 36
+  Flow cover: 3
+  Zero half: 8
+  RLT: 2
+  Lazy constraints: 15631
+
+Explored 2763 nodes (48143 simplex iterations) in 60.39 seconds (3.60 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.120000000000e+02, gap -
+
+User-callback calls 6232, time in user-callback 57.11 sec
+### best bound = 312.0
+total risk = 1121
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst8.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x3c5a17c4
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.361143e+02, 316 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  136.11429    0    3          -  136.11429      -     -    0s
+     0     0  213.89655    0   82          -  213.89655      -     -    2s
+     0     0  248.58718    0   71          -  248.58718      -     -    2s
+     0     0  291.84583    0   44          -  291.84583      -     -    2s
+     0     0  323.93696    0   71          -  323.93696      -     -    4s
+     0     0  329.83091    0   75          -  329.83091      -     -    4s
+     0     0  338.22901    0   51          -  338.22901      -     -    4s
+     0     0  341.44132    0   83          -  341.44132      -     -    4s
+     0     0  341.44658    0   83          -  341.44658      -     -    4s
+     0     0  343.54423    0   87          -  343.54423      -     -    4s
+     0     0  344.25888    0   80          -  344.25888      -     -    4s
+     0     0  345.05417    0   50          -  345.05417      -     -    4s
+     0     0  345.38091    0   42          -  345.38091      -     -    4s
+     0     0  345.63419    0   34          -  345.63419      -     -    4s
+     0     0  348.66502    0   91          -  348.66502      -     -    4s
+     0     0  350.24787    0   88          -  350.24787      -     -    4s
+     0     0  352.11274    0   95          -  352.11274      -     -    4s
+     0     0  353.11966    0   81          -  353.11966      -     -    4s
+     0     0  353.14957    0   83          -  353.14957      -     -    4s
+     0     0  353.42890    0   96          -  353.42890      -     -    5s
+     0     0  353.48178    0   95          -  353.48178      -     -    5s
+     0     0  353.77292    0   96          -  353.77292      -     -    5s
+     0     0  354.36667    0   91          -  354.36667      -     -    5s
+     0     2  354.36667    0   94          -  354.36667      -     -    5s
+   950  1025  388.20000   29   34          -  358.57500      -  21.6   10s
+  1526  1560  396.50544   19   55          -  358.57500      -  20.6   15s
+  1795  1832  410.63333   46   14          -  358.57500      -  20.2   20s
+  1974  1995  421.76923   52    8          -  358.57500      -  20.0   25s
+  2124  2128  405.78447   40   21          -  358.57500      -  20.4   30s
+  2294  2303  447.81482   63    2          -  358.57500      -  20.5   35s
+  2378  2365  453.51549   66    6          -  358.57500      -  20.7   42s
+  2509  2477  376.17705    7   88          -  359.59231      -  21.1   45s
+  2624  2577  380.25000   10   85          -  359.59231      -  21.4   51s
+  2762  2715  379.19211    9   76          -  359.59231      -  21.5   55s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 3
+  Clique: 1
+  MIR: 52
+  Zero half: 3
+  RLT: 1
+  Lazy constraints: 15271
+
+Explored 2938 nodes (63839 simplex iterations) in 61.17 seconds (3.55 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.600000000000e+02, gap -
+
+User-callback calls 6684, time in user-callback 57.91 sec
+### best bound = 360.0
+total risk = 1021
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst9.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x231ab86b
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.289720e+02, 332 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  128.97200    0    3          -  128.97200      -     -    0s
+     0     0  188.99100    0   83          -  188.99100      -     -    2s
+     0     2  193.93100    0   83          -  193.93100      -     -    2s
+    11     9  299.21737    1   51          -  299.21737      -   1.2    5s
+    56    41  320.04372    1   55          -  320.04372      -  24.9   10s
+   261   208  350.29394   28   53          -  331.54643      -  30.0   15s
+   869   809  362.23936   38   18          -  331.54643      -  36.3   20s
+  1417  1359  378.85855   47   32          -  331.54643      -  34.5   26s
+  1675  1559  361.08310   48   35          -  331.54643      -  33.4   31s
+  1872  1840  387.85714   56    3          -  331.54643      -  32.4   35s
+  2084  2029  393.96308   60    9          -  331.54643      -  31.0   40s
+  2196  2090  390.16667   58   41          -  331.54643      -  30.5   45s
+  2263  2161  368.96364   46   31          -  331.54643      -  30.4   51s
+  2357  2228  380.53588   52   37          -  331.54643      -  30.1   56s
+  2465  2351  343.90026   28   83          -  331.54643      -  29.9   60s
+
+Cutting planes:
+  Gomory: 14
+  Lift-and-project: 5
+  Implied bound: 4
+  MIR: 5
+  Flow cover: 25
+  Zero half: 31
+  Lazy constraints: 12413
+
+Explored 2526 nodes (75711 simplex iterations) in 62.05 seconds (7.24 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.320000000000e+02, gap -
+
+User-callback calls 7552, time in user-callback 56.45 sec
+### best bound = 332.0
+total risk = 1064
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst10.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x217ee0e2
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.375067e+02, 331 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  137.50667    0    5          -  137.50667      -     -    0s
+     0     0  202.80000    0   76          -  202.80000      -     -    2s
+     0     2  207.80000    0   76          -  207.80000      -     -    2s
+    12    10  329.46667    1   22          -  329.46667      -   0.2    5s
+    66    47  348.61446    1   73          -  348.61446      -  29.3   10s
+   546   501  360.88421   39   36          -  352.20978      -  21.4   15s
+   900   872  370.64713   48   45          -  352.20978      -  25.0   20s
+  1121  1058  367.84174   50   32          -  352.20978      -  25.7   25s
+  1247  1180  369.62917   50   18          -  352.20978      -  25.8   30s
+  1460  1405  379.23200   57   18          -  352.20978      -  25.9   36s
+  1602  1560  380.50533   59   37          -  352.20978      -  25.2   40s
+  1726  1647  374.47230   51   38          -  352.20978      -  24.7   46s
+  1793  1739  403.46842   65    9          -  352.20978      -  24.6   50s
+  1877  1829  383.09200   65    9          -  352.20978      -  24.2   55s
+
+Cutting planes:
+  Gomory: 10
+  Lift-and-project: 4
+  Implied bound: 1
+  MIR: 2
+  Flow cover: 28
+  Zero half: 26
+  RLT: 1
+  Lazy constraints: 12014
+
+Explored 1975 nodes (47887 simplex iterations) in 60.61 seconds (6.09 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.530000000000e+02, gap -
+
+User-callback calls 6150, time in user-callback 55.47 sec
+### best bound = 353.0
+total risk = 1048
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst11.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x6bfc519a
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.094667e+02, 355 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  109.46667    0    7          -  109.46667      -     -    0s
+     0     0  190.12121    0   81          -  190.12121      -     -    2s
+     0     0  228.45556    0   85          -  228.45556      -     -    2s
+     0     0  271.03284    0   63          -  271.03284      -     -    2s
+     0     0  302.11701    0   45          -  302.11701      -     -    4s
+     0     0  307.79055    0   31          -  307.79055      -     -    4s
+     0     0  308.91613    0   31          -  308.91613      -     -    4s
+     0     0  309.95603    0   30          -  309.95603      -     -    4s
+     0     0  310.11489    0   25          -  310.11489      -     -    4s
+     0     0  310.21587    0   35          -  310.21587      -     -    4s
+     0     0  310.21648    0   34          -  310.21648      -     -    4s
+     0     0  310.26316    0   34          -  310.26316      -     -    5s
+     0     2  314.89958    0   65          -  314.89958      -     -    5s
+   654   761  336.02891   19   44          -  320.66962      -  19.8   10s
+  1132  1213  347.91128   31   55          -  320.66962      -  19.7   15s
+  1484  1556  367.45461   43   44          -  320.66962      -  18.5   20s
+  1591  1623  372.20173   44   42          -  320.66962      -  18.2   28s
+  1769  1803  372.74390   49   18          -  320.66962      -  18.3   30s
+  2082  2080  328.22604    8   78          -  321.32500      -  17.8   35s
+  2290  2264  334.23125   11   74          -  321.32500      -  17.6   41s
+  2475  2440  335.91875   15   50          -  321.32500      -  17.5   46s
+  2613  2586  337.46042   17   58          -  321.32500      -  17.4   51s
+  2712  2672  338.04375   18   56          -  321.32500      -  17.3   55s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 2
+  Implied bound: 4
+  Clique: 3
+  MIR: 19
+  Flow cover: 1
+  GUB cover: 2
+  Zero half: 6
+  Lazy constraints: 15389
+
+Explored 2804 nodes (49772 simplex iterations) in 60.74 seconds (2.88 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.220000000000e+02, gap -
+
+User-callback calls 6265, time in user-callback 57.90 sec
+### best bound = 322.0
+total risk = 959
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst12.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xa95f7b0a
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.052359e+02, 334 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  105.23590    0    2          -  105.23590      -     -    0s
+     0     0  170.99375    0   77          -  170.99375      -     -    2s
+     0     2  174.15294    0   77          -  174.15294      -     -    2s
+    11     9  289.62480    1   46          -  289.62480      -   0.7    5s
+    58    41  305.48715    1   76          -  305.48715      -  32.2   10s
+   113    87  312.04534   23   68          -  309.65726      -  36.0   15s
+   265   212  313.90380   27   79          -  310.83713      -  39.7   20s
+   574   517  322.18725   31   68          -  310.93796      -  42.0   25s
+  1294  1259  328.92140   41   40          -  310.93796      -  35.0   31s
+  1698  1645  347.87619   52   31          -  310.93796      -  32.9   35s
+  1947  1903  354.35326   51   34          -  310.93796      -  32.1   40s
+  2278  2213  360.80630   55   50          -  310.93796      -  30.9   48s
+  2321  2213  323.70476   51   45          -  310.93796      -  30.6   50s
+  2418  2293  355.52152   62   22          -  310.93796      -  30.5   55s
+
+Cutting planes:
+  Gomory: 18
+  Implied bound: 2
+  MIR: 2
+  Flow cover: 20
+  Zero half: 30
+  Lazy constraints: 12372
+
+Explored 2565 nodes (77600 simplex iterations) in 61.24 seconds (8.42 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.110000000000e+02, gap -
+
+User-callback calls 7883, time in user-callback 55.12 sec
+### best bound = 311.0
+total risk = 1001
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst13.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x4dd9469c
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.098095e+02, 338 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  109.80952    0    5          -  109.80952      -     -    0s
+     0     0  178.68571    0   90          -  178.68571      -     -    2s
+     0     0  212.80625    0   65          -  212.80625      -     -    2s
+     0     0  242.93871    0   35          -  242.93871      -     -    2s
+     0     0  269.53333    0   68          -  269.53333      -     -    3s
+     0     0  272.28333    0   65          -  272.28333      -     -    3s
+     0     0  284.12535    0   47          -  284.12535      -     -    3s
+     0     0  285.29167    0   53          -  285.29167      -     -    3s
+     0     0  285.29167    0   40          -  285.29167      -     -    3s
+     0     0  289.47222    0   76          -  289.47222      -     -    4s
+     0     0  291.84127    0   59          -  291.84127      -     -    4s
+     0     0  293.50794    0   54          -  293.50794      -     -    4s
+     0     0  293.50794    0   54          -  293.50794      -     -    4s
+     0     2  293.50794    0   54          -  293.50794      -     -    4s
+    15    32  303.32937    4   57          -  299.50000      -  25.2    5s
+   957  1041  347.39697   26   17          -  304.89286      -  16.1   11s
+  1290  1374  361.22857   35    7          -  304.89286      -  16.4   16s
+  1522  1585  315.90397   10   71          -  304.94048      -  16.1   20s
+  1736  1769  318.91270   14   57          -  304.94048      -  15.6   26s
+  1825  1850  320.67177   15   35          -  304.94048      -  15.7   30s
+  1969  1970  323.00859   18   33          -  304.94048      -  15.5   35s
+  2086  2073  324.28571   20   28          -  304.94048      -  15.4   41s
+  2136  2103  328.38504   23   57          -  304.94048      -  15.3   45s
+  2218  2194  324.58696   21   30          -  304.94048      -  15.4   51s
+  2287  2251  317.84783   16   59          -  304.94048      -  15.3   55s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 7
+  Clique: 7
+  MIR: 34
+  Flow cover: 1
+  Zero half: 2
+  Relax-and-lift: 2
+  PSD: 1
+  Lazy constraints: 15704
+
+Explored 2416 nodes (37982 simplex iterations) in 62.75 seconds (2.38 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.050000000000e+02, gap -
+
+User-callback calls 5489, time in user-callback 60.13 sec
+### best bound = 305.0
+total risk = 1007
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst14.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x6ad53f3f
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.272250e+02, 328 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  127.22500    0    3          -  127.22500      -     -    0s
+     0     0  194.61765    0   76          -  194.61765      -     -    2s
+     0     2  198.11892    0   76          -  198.11892      -     -    2s
+    13    10  303.51463    1   66          -  303.51463      -   0.3    5s
+   100    69  330.14055    1   84          -  330.14055      -  26.6   12s
+   357   290  336.95000   36   46          -  333.27734      -  28.8   15s
+   817   765  343.72162   42   52          -  334.12051      -  27.6   20s
+  1333  1275  351.68667   51   23          -  334.12051      -  25.9   25s
+  1661  1557  359.44630   56   37          -  334.12051      -  25.4   31s
+  1831  1779  367.57000   59   18          -  334.12051      -  25.1   35s
+  1982  1895  357.59143   59   16          -  334.12051      -  24.4   40s
+  2234  2138  370.62667   67    3          -  334.12051      -  24.2   48s
+  2280  2186  381.81111   68   18          -  334.12051      -  24.3   51s
+  2337  2238  402.94340   72   39          -  334.12051      -  24.3   55s
+
+Cutting planes:
+  Gomory: 16
+  Lift-and-project: 3
+  MIR: 6
+  Flow cover: 17
+  Zero half: 28
+  RLT: 1
+  Lazy constraints: 13608
+
+Explored 2445 nodes (59601 simplex iterations) in 62.20 seconds (7.41 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.350000000000e+02, gap -
+
+User-callback calls 7396, time in user-callback 56.38 sec
+### best bound = 335.0
+total risk = 1029
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst15.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xbc9aed8f
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.341478e+02, 331 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  134.14783    0    5          -  134.14783      -     -    0s
+     0     0  195.09400    0   78          -  195.09400      -     -    2s
+     0     0  214.42625    0   60          -  214.42625      -     -    2s
+     0     0  251.99167    0   45          -  251.99167      -     -    2s
+     0     0  279.61842    0   69          -  279.61842      -     -    3s
+     0     0  284.08145    0   57          -  284.08145      -     -    4s
+     0     0  293.39932    0   59          -  293.39932      -     -    4s
+     0     0  295.57279    0   25          -  295.57279      -     -    4s
+     0     0  297.48318    0   56          -  297.48318      -     -    4s
+     0     0  303.98125    0   69          -  303.98125      -     -    4s
+     0     0  304.38986    0   69          -  304.38986      -     -    4s
+     0     0  309.98667    0   83          -  309.98667      -     -    4s
+     0     0  311.24657    0   60          -  311.24657      -     -    4s
+     0     0  311.24657    0   60          -  311.24657      -     -    4s
+     0     0  312.34283    0   63          -  312.34283      -     -    4s
+     0     0  312.95331    0   63          -  312.95331      -     -    4s
+     0     0  312.95331    0   53          -  312.95331      -     -    4s
+     0     0  313.07464    0   49          -  313.07464      -     -    4s
+     0     2  313.07464    0   49          -  313.07464      -     -    5s
+  1103  1204  361.31196   28   28          -  322.48043      -  15.1   10s
+  1611  1657  382.70000   41   23          -  322.48043      -  15.2   15s
+  1856  1846  335.88954   15   76          -  322.48043      -  15.2   21s
+  1925  1924  439.74483   47   14          -  322.48043      -  15.6   25s
+  2109  2098  418.76923   59    8          -  322.48043      -  15.9   30s
+  2346  2348  421.66667   63    9          -  322.48043      -  15.5   35s
+  2512  2502  423.21737   67   16          -  322.48043      -  15.1   40s
+  2627  2570 infeasible   41               -  322.48043      -  15.0   45s
+  2814  2736  426.50588   76    4          -  322.48043      -  14.8   51s
+  2905  2808  427.00000   79    2          -  322.48043      -  14.6   57s
+  2948  2814  393.53333   44   26          -  322.48043      -  14.6   60s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 5
+  Clique: 2
+  MIR: 47
+  Zero half: 6
+  Lazy constraints: 15221
+
+Explored 2950 nodes (44236 simplex iterations) in 60.14 seconds (2.88 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.230000000000e+02, gap -
+
+User-callback calls 6623, time in user-callback 57.20 sec
+### best bound = 323.0
+total risk = 1027
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst16.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xdf262351
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.271714e+02, 338 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  127.17143    0    2          -  127.17143      -     -    0s
+     0     0  193.88621    0   77          -  193.88621      -     -    2s
+     0     2  196.61034    0   76          -  196.61034      -     -    2s
+     9     8  315.99078    1   56          -  315.99078      -   0.2    5s
+    75    53  335.43575    1   83          -  335.43575      -  27.6   11s
+   359   286  347.39680   36   65          -  339.67997      -  22.5   15s
+   886   783  358.60595   44   26          -  339.67997      -  24.1   20s
+  1268  1187  361.58179   48   37          -  339.67997      -  23.9   26s
+  1393  1300  362.99661   48   45          -  339.67997      -  24.1   31s
+  1533  1462  372.01900   53   30          -  339.67997      -  23.9   35s
+  1598  1508  360.65777   49   42          -  339.67997      -  23.9   41s
+  1680  1579  379.31622   60   49          -  339.67997      -  24.4   45s
+  1789  1694  379.20468   56   36          -  339.67997      -  24.8   50s
+  1931  1845  379.20000   58   13          -  339.67997      -  24.5   56s
+  1972  1845  359.94951   42   60          -  339.67997      -  24.4   60s
+
+Cutting planes:
+  Gomory: 14
+  Lift-and-project: 4
+  Cover: 1
+  Implied bound: 1
+  MIR: 3
+  Flow cover: 18
+  Zero half: 29
+  Lazy constraints: 12944
+
+Explored 1976 nodes (48723 simplex iterations) in 60.49 seconds (6.24 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.400000000000e+02, gap -
+
+User-callback calls 6591, time in user-callback 55.03 sec
+### best bound = 340.0
+total risk = 979
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst17.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x823e7cec
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.090941e+02, 339 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  109.09412    0    5          -  109.09412      -     -    0s
+     0     0  166.97647    0   73          -  166.97647      -     -    2s
+     0     0  193.10423    0   56          -  193.10423      -     -    2s
+     0     0  236.22241    0   37          -  236.22241      -     -    2s
+     0     0  255.78750    0   63          -  255.78750      -     -    4s
+     0     0  265.85333    0   46          -  265.85333      -     -    4s
+     0     0  267.04778    0   46          -  267.04778      -     -    4s
+     0     0  268.70973    0   49          -  268.70973      -     -    4s
+     0     0  269.33465    0   54          -  269.33465      -     -    4s
+     0     0  269.56022    0   53          -  269.56022      -     -    4s
+     0     0  269.60198    0   47          -  269.60198      -     -    4s
+     0     0  273.67301    0   77          -  273.67301      -     -    4s
+     0     0  274.66252    0   79          -  274.66252      -     -    4s
+     0     0  274.66252    0   81          -  274.66252      -     -    4s
+     0     0  275.24092    0   75          -  275.24092      -     -    4s
+     0     0  275.92393    0   80          -  275.92393      -     -    4s
+     0     0  275.92456    0   80          -  275.92456      -     -    4s
+     0     0  276.67452    0   72          -  276.67452      -     -    4s
+     0     0  276.94311    0   66          -  276.94311      -     -    4s
+     0     0  276.94311    0   69          -  276.94311      -     -    4s
+     0     0  278.09696    0   69          -  278.09696      -     -    4s
+     0     2  278.09696    0   69          -  278.09696      -     -    5s
+  1153  1258  334.19085   30   46          -  286.66939      -  17.2   10s
+  1463  1531  345.82500   39   17          -  286.66939      -  17.7   15s
+  1587  1634  349.32340   41   24          -  286.66939      -  18.1   20s
+  1820  1846  337.40392   27   22          -  286.66939      -  18.7   26s
+  1932  1958 infeasible   54               -  287.56649      -  18.9   31s
+  2012  2022  297.22344    7   85          -  287.56649      -  18.9   35s
+  2094  2086  335.74837   29   26          -  287.56649      -  19.0   40s
+  2182  2173  300.97661   10   83          -  287.56649      -  19.0   45s
+  2261  2235  351.86750   48   23          -  287.56649      -  18.9   50s
+  2311  2299  301.10420   13   74          -  287.56649      -  18.8   55s
+  2378  2358  301.97828    9   74          -  287.56649      -  18.8   60s
+
+Cutting planes:
+  Gomory: 4
+  Implied bound: 6
+  Clique: 6
+  MIR: 43
+  Zero half: 5
+  RLT: 2
+  Lazy constraints: 16519
+
+Explored 2407 nodes (46608 simplex iterations) in 62.38 seconds (2.67 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.880000000000e+02, gap -
+
+User-callback calls 5524, time in user-callback 59.72 sec
+### best bound = 288.0
+total risk = 1037
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst18.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x4bd8667f
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.217412e+02, 319 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  121.74118    0    4          -  121.74118      -     -    0s
+     0     0  191.95473    0   84          -  191.95473      -     -    2s
+     0     2  194.95473    0   82          -  194.95473      -     -    2s
+    13    10  301.81523    1   54          -  301.81523      -   0.7    5s
+    77    53  318.51465    1   82          -  318.51465      -   0.1   10s
+   123    85  322.45415    1   67          -  322.45415      -  16.2   16s
+   408   337  331.77755   28   85          -  323.72286      -  32.5   20s
+  1125  1075  337.63156   37   50          -  323.72286      -  32.6   26s
+  1203  1141  339.85656   38   56          -  323.72286      -  32.3   30s
+  1600  1563  345.95267   44   46          -  323.72286      -  30.4   36s
+  1777  1684  349.19600   47   15          -  323.72286      -  29.8   41s
+  1867  1742  353.23280   43   62          -  323.72286      -  29.9   45s
+  1993  1926  340.26923   47   24          -  323.72286      -  29.3   50s
+  2076  1972 infeasible   58               -  323.72286      -  28.7   55s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 1
+  MIR: 4
+  Flow cover: 27
+  Zero half: 23
+  Lazy constraints: 10907
+
+Explored 2185 nodes (62627 simplex iterations) in 60.45 seconds (7.55 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.240000000000e+02, gap -
+
+User-callback calls 7133, time in user-callback 54.31 sec
+### best bound = 324.0
+total risk = 1030
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst19.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x6468562c
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.291647e+02, 324 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  129.16471    0    2          -  129.16471      -     -    0s
+     0     0  186.64390    0   86          -  186.64390      -     -    2s
+     0     0  224.42209    0   77          -  224.42209      -     -    2s
+     0     0  263.35000    0   51          -  263.35000      -     -    2s
+     0     0  285.42389    0   53          -  285.42389      -     -    4s
+     0     0  298.58157    0   38          -  298.58157      -     -    4s
+     0     0  299.25345    0   26          -  299.25345      -     -    4s
+     0     0  313.20331    0   32          -  313.20331      -     -    4s
+     0     0  314.45894    0   29          -  314.45894      -     -    4s
+     0     0  316.96752    0   29          -  316.96752      -     -    4s
+     0     0  316.96752    0   41          -  316.96752      -     -    4s
+     0     0  316.96752    0   42          -  316.96752      -     -    4s
+     0     0  316.96752    0   33          -  316.96752      -     -    4s
+     0     0  317.66416    0   71          -  317.66416      -     -    5s
+     0     0  318.13227    0   63          -  318.13227      -     -    5s
+     0     0  318.68552    0   65          -  318.68552      -     -    5s
+     0     0  318.68552    0   65          -  318.68552      -     -    5s
+     0     2  318.68552    0   60          -  318.68552      -     -    5s
+   877   904  348.09939   19   36          -  322.54724      -  20.3   11s
+  1537  1545  387.93521   39   18          -  322.54724      -  18.8   15s
+  1921  1859  416.16800   58    8          -  322.54724      -  19.4   21s
+  2295  2216  391.11177   35   35          -  322.54724      -  19.4   25s
+  2442  2316  340.27034   12   70          -  322.54724      -  19.4   30s
+  2566  2437  403.02059   40   49          -  322.54724      -  19.9   35s
+  2880  2719  410.65465   44   27          -  322.54724      -  20.0   40s
+  2983  2805  337.50500    8   65          -  322.74615      -  20.1   45s
+  3190  2955 infeasible   61               -  322.74615      -  20.3   50s
+  3342  3076  340.30561   13   64          -  322.74615      -  20.1   55s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 12
+  Clique: 8
+  MIR: 36
+  Flow cover: 1
+  Zero half: 6
+  Mod-K: 2
+  RLT: 1
+  Lazy constraints: 14975
+
+Explored 3498 nodes (71822 simplex iterations) in 60.47 seconds (3.82 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.230000000000e+02, gap -
+
+User-callback calls 7754, time in user-callback 56.96 sec
+### best bound = 323.0
+total risk = 1024
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst20.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x2131933c
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.311944e+02, 344 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  131.19444    0    5          -  131.19444      -     -    0s
+     0     0  189.87943    0   87          -  189.87943      -     -    2s
+     0     0  218.00882    0   69          -  218.00882      -     -    2s
+     0     0  259.07500    0   37          -  259.07500      -     -    2s
+     0     0  290.40577    0   66          -  290.40577      -     -    3s
+     0     0  296.69722    0   37          -  296.69722      -     -    4s
+     0     0  297.53403    0   41          -  297.53403      -     -    4s
+     0     0  299.25000    0   42          -  299.25000      -     -    4s
+     0     0  299.64583    0   41          -  299.64583      -     -    4s
+     0     0  299.64583    0   41          -  299.64583      -     -    4s
+     0     0  300.30833    0   32          -  300.30833      -     -    4s
+     0     0  300.56875    0   43          -  300.56875      -     -    4s
+     0     0  300.56875    0   36          -  300.56875      -     -    4s
+     0     0  300.62298    0   36          -  300.62298      -     -    4s
+     0     2  300.70692    0   36          -  300.70692      -     -    4s
+   136   160  315.16806    7   64          -  314.35556      -  19.1    5s
+  1604  1661 infeasible   40               -  317.09031      -  18.7   10s
+  2312  2232  326.55000   16   60          -  317.09031      -  18.5   15s
+  2657  2520  344.34474   21   73          -  317.09031      -  19.3   21s
+  2796  2643  346.22109   22   65          -  317.09031      -  19.5   26s
+  2940  2732  348.21280   17   79          -  317.09031      -  19.9   30s
+  3079  2872  355.67182   20   81          -  317.09031      -  20.3   35s
+  3315  3110  356.18226   26   68          -  317.09031      -  20.5   40s
+  3426  3185  366.32210   27   42          -  317.09031      -  20.5   47s
+  3504  3220  383.72813   18   62          -  317.09031      -  20.7   50s
+  3634  3362  370.79643   30   54          -  317.09031      -  21.0   55s
+  3786  3488  379.48302   39   18          -  317.09031      -  21.0   60s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 10
+  Clique: 9
+  MIR: 29
+  Flow cover: 2
+  Zero half: 7
+  PSD: 1
+  Lazy constraints: 13862
+
+Explored 3813 nodes (81162 simplex iterations) in 61.69 seconds (2.70 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.180000000000e+02, gap -
+
+User-callback calls 8292, time in user-callback 59.45 sec
+### best bound = 318.0
+total risk = 1075
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst21.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x0b14668a
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.255429e+02, 343 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  125.54286    0    5          -  125.54286      -     -    0s
+     0     0  190.06667    0   74          -  190.06667      -     -    2s
+     0     0  228.14583    0   60          -  228.14583      -     -    2s
+     0     0  262.10385    0   36          -  262.10385      -     -    2s
+     0     0  294.73333    0   71          -  294.73333      -     -    4s
+     0     0  300.39167    0   53          -  300.39167      -     -    4s
+     0     0  300.41667    0   53          -  300.41667      -     -    4s
+     0     0  306.28632    0   52          -  306.28632      -     -    4s
+     0     0  307.12630    0   49          -  307.12630      -     -    4s
+     0     0  308.98844    0   58          -  308.98844      -     -    4s
+     0     0  309.53259    0   46          -  309.53259      -     -    4s
+     0     0  309.53259    0   59          -  309.53259      -     -    4s
+     0     0  309.53259    0   40          -  309.53259      -     -    4s
+     0     0  310.23333    0   43          -  310.23333      -     -    4s
+     0     0  310.23333    0   45          -  310.23333      -     -    4s
+     0     0  310.37941    0   45          -  310.37941      -     -    4s
+     0     2  310.42353    0   45          -  310.42353      -     -    4s
+    95   128  336.08248    6   59          -  318.67383      -  15.5    5s
+  1060  1142  374.72157   24   40          -  320.91200      -  22.1   10s
+  1421  1468  382.30659   34   28          -  320.91200      -  22.6   16s
+  1606  1592  366.98639   17   80          -  320.91200      -  22.6   20s
+  1825  1820  414.78000   55    1          -  320.91200      -  23.3   26s
+  1921  1904  415.15669   54   24          -  320.91200      -  23.4   30s
+  2114  2081  331.35693    8  107          -  321.07200      -  24.0   35s
+  2235  2169  380.04736   24   57          -  321.07200      -  23.8   40s
+  2320  2282  339.21644   13  101          -  321.07200      -  23.7   45s
+  2440  2391  342.63310   15   87          -  321.07200      -  23.6   51s
+  2516  2465  345.99120   17   77          -  321.07200      -  23.5   56s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 1
+  Implied bound: 3
+  Clique: 2
+  MIR: 34
+  Flow cover: 1
+  Zero half: 8
+  RLT: 1
+  Lazy constraints: 14953
+
+Explored 2593 nodes (61909 simplex iterations) in 61.18 seconds (3.09 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.220000000000e+02, gap -
+
+User-callback calls 5817, time in user-callback 58.80 sec
+### best bound = 322.0
+total risk = 1030
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst22.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xb62b8340
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.348500e+02, 330 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  134.85000    0    4          -  134.85000      -     -    0s
+     0     0  190.26887    0   84          -  190.26887      -     -    2s
+     0     0  211.46667    0   60          -  211.46667      -     -    2s
+     0     0  246.03158    0   26          -  246.03158      -     -    2s
+     0     0  265.02935    0   74          -  265.02935      -     -    3s
+     0     0  288.55000    0   31          -  288.55000      -     -    3s
+     0     0  289.80000    0   34          -  289.80000      -     -    3s
+     0     0  289.85455    0   19          -  289.85455      -     -    3s
+     0     0  298.05591    0   52          -  298.05591      -     -    4s
+     0     0  300.95000    0   24          -  300.95000      -     -    4s
+     0     0  302.70000    0   26          -  302.70000      -     -    4s
+     0     0  302.70000    0   65          -  302.70000      -     -    4s
+     0     0  302.70000    0   65          -  302.70000      -     -    4s
+     0     2  302.70000    0   65          -  302.70000      -     -    4s
+    95   128  324.05484    6   46          -  309.67016      -  10.2    5s
+  1264  1372  365.29677   32    2          -  310.51250      -  16.1   10s
+  1624  1637  336.55250   22   63          -  310.51250      -  16.4   16s
+  1814  1826  370.51613   51   29          -  310.51250      -  17.2   20s
+  2028  2004  380.20667   40    9          -  310.51250      -  17.1   25s
+  2170  2175  388.86000   49   13          -  310.51250      -  17.2   30s
+  2299  2269  371.43168   43   13          -  310.51250      -  17.1   36s
+  2407  2402  428.70943   69    2          -  310.51250      -  17.0   40s
+  2529  2514  402.42625   59   32          -  310.51250      -  16.8   46s
+  2561  2548  407.32783   59   13          -  310.51250      -  16.8   55s
+  2670  2647  343.57500   22   33          -  310.51250      -  17.1   60s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 16
+  Clique: 13
+  MIR: 22
+  Flow cover: 5
+  GUB cover: 1
+  Zero half: 5
+  RLT: 1
+  PSD: 1
+  Lazy constraints: 16992
+
+Explored 2696 nodes (47616 simplex iterations) in 62.21 seconds (2.75 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.110000000000e+02, gap -
+
+User-callback calls 6037, time in user-callback 59.74 sec
+### best bound = 311.0
+total risk = 1046
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst23.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xa52da8ab
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.433769e+02, 337 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  143.37692    0    5          -  143.37692      -     -    0s
+     0     0  200.88654    0   74          -  200.88654      -     -    2s
+     0     0  225.82727    0   69          -  225.82727      -     -    2s
+     0     0  264.70625    0   43          -  264.70625      -     -    2s
+     0     0  300.65000    0   90          -  300.65000      -     -    3s
+     0     0  304.48485    0   72          -  304.48485      -     -    3s
+     0     0  314.81358    0   63          -  314.81358      -     -    3s
+     0     0  316.15000    0   48          -  316.15000      -     -    3s
+     0     0  316.15000    0   68          -  316.15000      -     -    3s
+     0     0  319.63333    0   74          -  319.63333      -     -    4s
+     0     0  320.11745    0   82          -  320.11745      -     -    4s
+     0     0  322.86310    0   66          -  322.86310      -     -    4s
+     0     0  323.65348    0   67          -  323.65348      -     -    4s
+     0     0  323.65348    0   64          -  323.65348      -     -    4s
+     0     0  323.71877    0   62          -  323.71877      -     -    4s
+     0     2  323.71877    0   62          -  323.71877      -     -    4s
+    95   128  334.01905    6   69          -  329.11697      -  15.7    5s
+  1657  1702  395.93291   46   18          -  331.42653      -  18.0   10s
+  2105  2037  421.50000   57    7          -  331.42653      -  17.7   16s
+  2343  2230  340.17421    9   83          -  331.42653      -  17.8   20s
+  2445  2314  437.00000   68    -          -  331.66905      -  17.9   26s
+  2597  2469  337.95837   10   84          -  331.66905      -  18.0   30s
+  2745  2541  380.05012   29   64          -  331.66905      -  18.0   35s
+  2875  2700  354.45431   17   63          -  331.66905      -  18.0   40s
+  3024  2811  435.00000   59    -          -  331.66905      -  18.0   45s
+  3119  2912  355.00628   18   56          -  331.66905      -  18.1   50s
+  3264  3043  360.72007   20   72          -  331.66905      -  17.9   56s
+  3305  3061  361.38581   21   73          -  331.66905      -  17.9   60s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 8
+  Clique: 8
+  MIR: 44
+  Flow cover: 3
+  Zero half: 9
+  Mod-K: 1
+  RLT: 2
+  Relax-and-lift: 3
+  PSD: 2
+  Lazy constraints: 16068
+
+Explored 3322 nodes (60737 simplex iterations) in 61.04 seconds (2.94 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.320000000000e+02, gap -
+
+User-callback calls 7335, time in user-callback 58.43 sec
+### best bound = 332.0
+total risk = 984
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst24.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc7afe39d
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.247760e+02, 329 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  124.77600    0    3          -  124.77600      -     -    0s
+     0     0  175.83846    0   66          -  175.83846      -     -    2s
+     0     0  197.82109    0   70          -  197.82109      -     -    2s
+     0     0  249.73572    0   47          -  249.73572      -     -    2s
+     0     0  271.45000    0   70          -  271.45000      -     -    3s
+     0     0  283.43326    0   46          -  283.43326      -     -    4s
+     0     0  283.87111    0   38          -  283.87111      -     -    4s
+     0     0  283.89064    0   37          -  283.89064      -     -    4s
+     0     0  283.90084    0   20          -  283.90084      -     -    4s
+     0     0  284.13750    0   34          -  284.13750      -     -    4s
+     0     0  284.13750    0   38          -  284.13750      -     -    4s
+     0     0  284.40200    0   36          -  284.40200      -     -    4s
+     0     2  286.98034    0   49          -  286.98034      -     -    4s
+   191   227  295.42607    8   56          -  294.15033      -  13.9    5s
+  1663  1685  354.91177   45   18          -  294.42083      -  21.2   10s
+  2204  2155  402.20000   58   18          -  294.42083      -  20.4   15s
+  2549  2413  342.80234   34   19          -  294.42083      -  19.9   20s
+  2705  2592  416.00000   65    3          -  294.42083      -  19.8   25s
+  2900  2786  304.94200    9   66          -  294.65833      -  19.6   30s
+  3014  2870  304.63106   10   69          -  294.65833      -  19.5   35s
+  3048  2905  306.79706   11   52          -  294.65833      -  19.5   44s
+  3083  2941  311.76250   12   60          -  294.65833      -  19.5   46s
+  3190  3052  304.71733   10   61          -  294.65833      -  19.9   50s
+  3344  3167  320.98190   16   61          -  294.65833      -  20.0   56s
+  3470  3290  321.17715   17   59          -  294.65833      -  19.8   61s
+
+Cutting planes:
+  Gomory: 12
+  Implied bound: 12
+  Clique: 8
+  MIR: 17
+  GUB cover: 2
+  Zero half: 1
+  Lazy constraints: 15027
+
+Explored 3475 nodes (70039 simplex iterations) in 61.33 seconds (2.70 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.950000000000e+02, gap -
+
+User-callback calls 7617, time in user-callback 58.98 sec
+### best bound = 295.0
+total risk = 1022
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst25.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x0623f2dc
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.257700e+02, 340 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  125.77000    0    4          -  125.77000      -     -    0s
+     0     0  190.55000    0   82          -  190.55000      -     -    1s
+     0     0  223.45714    0   67          -  223.45714      -     -    2s
+     0     0  266.90714    0   43          -  266.90714      -     -    2s
+     0     0  290.61683    0   69          -  290.61683      -     -    3s
+     0     0  302.48221    0   69          -  302.48221      -     -    3s
+     0     0  304.73413    0   69          -  304.73413      -     -    3s
+     0     0  304.73413    0   69          -  304.73413      -     -    3s
+     0     0  305.97266    0   49          -  305.97266      -     -    3s
+     0     0  309.57451    0   83          -  309.57451      -     -    4s
+     0     0  310.11633    0   76          -  310.11633      -     -    4s
+     0     0  310.11883    0   77          -  310.11883      -     -    4s
+     0     0  315.16555    0   78          -  315.16555      -     -    4s
+     0     0  316.05756    0   77          -  316.05756      -     -    4s
+     0     0  316.05756    0   79          -  316.05756      -     -    4s
+     0     0  316.47361    0   78          -  316.47361      -     -    4s
+     0     0  317.52917    0   79          -  317.52917      -     -    4s
+     0     0  317.52917    0   79          -  317.52917      -     -    4s
+     0     2  317.57083    0   79          -  317.57083      -     -    4s
+    95   128  325.49167    7   64          -  322.63750      -  16.0    5s
+  1058  1164  382.11667   27   23          -  324.24348      -  20.4   10s
+  1333  1387  396.98182   36   19          -  324.24348      -  20.8   15s
+  1677  1712  344.57574   10   76          -  324.82500      -  21.2   21s
+  1857  1876  394.97714   60    4          -  324.82500      -  21.2   26s
+  1999  2002  352.81658   16   57          -  324.82500      -  21.1   30s
+  2082  2079  362.20260   18   74          -  324.82500      -  21.1   35s
+  2270  2244  346.03737   11   64          -  324.82500      -  21.0   40s
+  2455  2412 infeasible   68               -  324.82500      -  20.5   46s
+  2541  2489  367.79394   25   41          -  324.82500      -  20.3   50s
+  2628  2555  372.12183   27   37          -  324.82500      -  20.2   55s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 7
+  Clique: 5
+  MIR: 38
+  Flow cover: 1
+  Zero half: 7
+  RLT: 1
+  Lazy constraints: 14436
+
+Explored 2713 nodes (55798 simplex iterations) in 61.11 seconds (2.70 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.250000000000e+02, gap -
+
+User-callback calls 6130, time in user-callback 58.63 sec
+### best bound = 325.0
+total risk = 1030
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst26.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x2c9104c2
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.329000e+02, 352 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  132.90000    0    9          -  132.90000      -     -    0s
+     0     0  193.17586    0   81          -  193.17586      -     -    2s
+     0     2  197.21667    0   81          -  197.21667      -     -    2s
+    14    11  320.07695    1   49          -  320.07695      -   0.9    5s
+   101    69  340.40937    1   98          -  340.40937      -   0.1   10s
+   134    92  343.34057    1   79          -  343.34057      -  21.1   15s
+   278   221  349.44296   31   67          -  344.24675      -  25.5   20s
+  1377  1300  358.62546   46   45          -  344.24675      -  25.1   25s
+  1759  1694  367.50000   51   31          -  344.24675      -  25.3   31s
+  1910  1801  360.78026   41   54          -  344.24675      -  25.1   35s
+  2087  1994  377.81250   56   25          -  344.24675      -  24.8   40s
+  2250  2137  378.43000   59   22          -  344.24675      -  24.4   45s
+  2317  2184  379.28000   60   16          -  344.24675      -  24.4   50s
+  2441  2297  382.02000   62    6          -  344.24675      -  24.4   55s
+  2542  2406  382.49231   65    6          -  344.24675      -  24.3   60s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 2
+  MIR: 5
+  Flow cover: 23
+  Zero half: 36
+  Lazy constraints: 14001
+
+Explored 2601 nodes (63614 simplex iterations) in 63.58 seconds (8.98 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.450000000000e+02, gap -
+
+User-callback calls 8473, time in user-callback 56.14 sec
+### best bound = 345.0
+total risk = 1026
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst27.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x4b3ee4b6
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.377067e+02, 331 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  137.70667    0    3          -  137.70667      -     -    0s
+     0     0  196.89231    0   70          -  196.89231      -     -    2s
+     0     0  227.61797    0   81          -  227.61797      -     -    2s
+     0     0  268.89821    0   54          -  268.89821      -     -    2s
+     0     0  293.69445    0   68          -  293.69445      -     -    4s
+     0     0  297.88747    0   64          -  297.88747      -     -    4s
+     0     0  307.29714    0   44          -  307.29714      -     -    4s
+     0     0  308.11959    0   43          -  308.11959      -     -    4s
+     0     0  315.04942    0   66          -  315.04942      -     -    4s
+     0     0  316.11379    0   69          -  316.11379      -     -    4s
+     0     0  316.17307    0   74          -  316.17307      -     -    4s
+     0     0  319.07049    0   76          -  319.07049      -     -    5s
+     0     0  319.63745    0   77          -  319.63745      -     -    5s
+     0     0  320.98863    0   76          -  320.98863      -     -    5s
+     0     0  321.56006    0   75          -  321.56006      -     -    5s
+     0     0  321.86843    0   71          -  321.86843      -     -    5s
+     0     2  321.97275    0   71          -  321.97275      -     -    5s
+  1326  1436  371.80498   34   33          -  327.21967      -  16.0   10s
+  1629  1696  382.13333   44    2          -  327.21967      -  16.2   15s
+  1830  1850  390.16176   51   10          -  327.21967      -  16.4   21s
+  1957  1959 infeasible   56               -  327.21967      -  16.5   25s
+  2057  2035  401.78636   56   23          -  327.21967      -  16.5   30s
+  2219  2188  403.29524   60    2          -  327.21967      -  16.7   36s
+  2346  2317  404.97500   63    4          -  327.21967      -  16.6   40s
+  2474  2434  410.20000   66    2          -  327.21967      -  16.5   45s
+  2601  2539  335.79270    8   68          -  329.58667      -  16.5   50s
+  2819  2704  361.88059   16   46          -  329.58667      -  16.2   56s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 8
+  Clique: 7
+  MIR: 31
+  Zero half: 7
+  RLT: 1
+  Relax-and-lift: 3
+  PSD: 2
+  Lazy constraints: 15340
+
+Explored 2912 nodes (48156 simplex iterations) in 62.32 seconds (3.01 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.300000000000e+02, gap -
+
+User-callback calls 6531, time in user-callback 59.74 sec
+### best bound = 330.0
+total risk = 974
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst28.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x2e93885b
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.188056e+02, 355 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  118.80556    0    9          -  118.80556      -     -    0s
+     0     0  182.88235    0   81          -  182.88235      -     -    1s
+     0     0  204.98400    0   71          -  204.98400      -     -    2s
+     0     0  240.23887    0   55          -  240.23887      -     -    2s
+     0     0  266.12838    0   41          -  266.12838      -     -    3s
+     0     0  275.11609    0   39          -  275.11609      -     -    3s
+     0     0  275.65663    0   36          -  275.65663      -     -    3s
+     0     0  277.93679    0   28          -  277.93679      -     -    3s
+     0     0  278.32830    0   27          -  278.32830      -     -    3s
+     0     0  278.33533    0   46          -  278.33533      -     -    4s
+     0     0  278.35041    0   44          -  278.35041      -     -    4s
+     0     0  278.35041    0   44          -  278.35041      -     -    5s
+     0     2  282.17883    0   82          -  282.17883      -     -    5s
+  1246  1316  352.19697   42   19          -  290.98547      -  14.9   10s
+  1518  1554  363.61818   49    1          -  290.98547      -  15.6   15s
+  1791  1800  305.29332   10   79          -  291.53245      -  16.0   20s
+  1955  1923  310.04615   13   53          -  291.53245      -  16.2   26s
+  2030  1954  332.97920   15   64          -  291.53245      -  16.4   33s
+  2088  2017  368.28929   42   21          -  291.53245      -  16.6   35s
+  2218  2161  316.03784   17   53          -  291.53245      -  16.8   41s
+  2347  2276  315.98235   18   39          -  291.53245      -  16.8   45s
+  2428  2357  316.83000   19   34          -  291.53245      -  16.7   51s
+  2501  2424  319.38154   20   29          -  291.53245      -  16.7   57s
+  2588  2491  350.99429   45   30          -  291.53245      -  16.7   60s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 6
+  Clique: 5
+  MIR: 26
+  Zero half: 11
+  RLT: 1
+  Relax-and-lift: 2
+  PSD: 1
+  Lazy constraints: 14172
+
+Explored 2603 nodes (44655 simplex iterations) in 61.90 seconds (2.62 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.920000000000e+02, gap -
+
+User-callback calls 5850, time in user-callback 58.84 sec
+### best bound = 292.0
+total risk = 987
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst29.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x9e10b63e
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.138297e+02, 337 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  113.82973    0    7          -  113.82973      -     -    0s
+     0     0  179.70248    0  100          -  179.70248      -     -    2s
+     0     2  184.69130    0  100          -  184.69130      -     -    2s
+    17    13  318.57217    1   34          -  318.57217      -   0.2    5s
+    72    51  329.82291    1   94          -  329.82291      -  28.4   11s
+   550   545  347.34499   31   33          -  332.63232      -  26.2   15s
+   972   948  353.07619   37   25          -  332.63232      -  28.8   21s
+  1164  1123  359.47692   41   29          -  332.63232      -  29.9   25s
+  1253  1196  360.99615   43   26          -  332.63232      -  30.0   30s
+  1376  1320  349.45239   43   56          -  332.63232      -  30.3   35s
+  1530  1471  366.51111   48   21          -  332.63232      -  30.3   41s
+  1627  1553  368.74849   49   24          -  332.63232      -  30.0   47s
+  1655  1553  367.73333   48   26          -  332.63232      -  29.9   50s
+  1726  1623  360.83529   44   24          -  332.63232      -  30.0   56s
+  1807  1698  369.93889   41   47          -  332.63232      -  30.1   60s
+
+Cutting planes:
+  Gomory: 20
+  Implied bound: 3
+  MIR: 6
+  Flow cover: 22
+  Zero half: 25
+  RLT: 2
+  Lazy constraints: 13459
+
+Explored 1812 nodes (55044 simplex iterations) in 60.61 seconds (5.51 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.330000000000e+02, gap -
+
+User-callback calls 5927, time in user-callback 55.69 sec
+### best bound = 333.0
+total risk = 1060
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst30.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xa2cf5c6a
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.428182e+02, 337 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  142.81818    0    6          -  142.81818      -     -    0s
+     0     0  209.40588    0   83          -  209.40588      -     -    2s
+     0     0  241.06429    0   52          -  241.06429      -     -    2s
+     0     0  286.60931    0   51          -  286.60931      -     -    2s
+     0     0  321.76429    0   42          -  321.76429      -     -    3s
+     0     0  326.18095    0   37          -  326.18095      -     -    3s
+     0     0  329.95073    0   43          -  329.95073      -     -    3s
+     0     0  331.79032    0   28          -  331.79032      -     -    3s
+     0     0  335.75771    0   72          -  335.75771      -     -    3s
+     0     0  341.93691    0   58          -  341.93691      -     -    3s
+     0     0  342.57976    0   73          -  342.57976      -     -    4s
+     0     0  342.86732    0   76          -  342.86732      -     -    4s
+     0     0  342.94557    0   68          -  342.94557      -     -    4s
+     0     2  342.94557    0   68          -  342.94557      -     -    4s
+   479   575  366.20435   16   29          -  350.04990      -  17.8    5s
+  1758  1845  424.47931   35   25          -  350.04990      -  13.9   10s
+  2151  2202  442.43044   48    8          -  350.04990      -  14.4   15s
+  2317  2328  442.46952   62    8          -  350.04990      -  14.3   22s
+  2394  2368 infeasible   65               -  350.04990      -  14.4   25s
+  2599  2538  471.98261   71    2          -  350.04990      -  14.3   31s
+  2728  2657  473.00000   73   11          -  350.04990      -  14.3   35s
+  2813  2727  474.00000   76   10          -  350.04990      -  14.3   40s
+  2884  2790  483.00000   76    -          -  350.04990      -  14.3   45s
+  2988  2857  396.51945   22   43          -  350.04990      -  14.4   50s
+  3059  2950  498.00000   77   11          -  350.04990      -  14.5   55s
+  3128  3006  361.79167   14   82          -  350.04990      -  14.7   60s
+
+Cutting planes:
+  Gomory: 6
+  Lift-and-project: 1
+  Implied bound: 5
+  Clique: 5
+  MIR: 40
+  Flow cover: 1
+  Zero half: 5
+  RLT: 1
+  Lazy constraints: 14785
+
+Explored 3160 nodes (47671 simplex iterations) in 62.75 seconds (2.34 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.510000000000e+02, gap -
+
+User-callback calls 6968, time in user-callback 60.19 sec
+### best bound = 351.0
+total risk = 1050
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst31.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x5b856009
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.263294e+02, 320 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  126.32941    0    2          -  126.32941      -     -    0s
+     0     0  196.27818    0   86          -  196.27818      -     -    2s
+     0     0  215.76786    0   73          -  215.76786      -     -    2s
+     0     0  254.18864    0   52          -  254.18864      -     -    2s
+     0     0  280.53718    0   83          -  280.53718      -     -    3s
+     0     0  292.59053    0   33          -  292.59053      -     -    3s
+     0     0  292.77588    0   33          -  292.77588      -     -    3s
+     0     0  294.36030    0   41          -  294.36030      -     -    3s
+     0     0  294.60275    0   40          -  294.60275      -     -    3s
+     0     0  294.79217    0   32          -  294.79217      -     -    3s
+     0     0  294.95000    0   18          -  294.95000      -     -    3s
+     0     0  294.95000    0   18          -  294.95000      -     -    3s
+     0     0  294.95000    0   28          -  294.95000      -     -    3s
+     0     0  294.95000    0   28          -  294.95000      -     -    4s
+     0     0  294.95000    0   28          -  294.95000      -     -    5s
+     0     2  304.29414    0   88          -  304.29414      -     -    5s
+  1693  1746  382.03088   43   27          -  309.22000      -  17.4   10s
+  2210  2180  403.18571   64    6          -  309.22000      -  17.9   15s
+  2467  2392  411.41852   74    8          -  309.22000      -  17.8   20s
+  2643  2551  431.50000   80   12          -  309.22000      -  18.0   25s
+  2815  2717  326.36713    7   81          -  310.05000      -  17.9   30s
+  2959  2803  354.73691   29   48          -  310.05000      -  17.8   35s
+  3111  2976  334.20673   12   87          -  310.05000      -  17.7   40s
+  3147  3008  339.39706   12   53          -  310.05000      -  17.7   50s
+  3341  3195  342.74130   15   56          -  310.05000      -  17.7   55s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 22
+  Clique: 21
+  MIR: 21
+  Flow cover: 3
+  GUB cover: 1
+  Zero half: 5
+  RLT: 6
+  Relax-and-lift: 4
+  PSD: 3
+  Lazy constraints: 15293
+
+Explored 3432 nodes (61559 simplex iterations) in 60.31 seconds (2.68 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.110000000000e+02, gap -
+
+User-callback calls 7550, time in user-callback 57.73 sec
+### best bound = 311.0
+total risk = 1070
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst32.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc1b24244
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.273333e+02, 338 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  127.33333    0    3          -  127.33333      -     -    0s
+     0     0  191.57000    0   74          -  191.57000      -     -    2s
+     0     2  191.57000    0   74          -  191.57000      -     -    2s
+    10     8  304.45714    1   71          -  304.45714      -   1.3    5s
+   107    74  326.23305    1   60          -  326.23305      -  17.5   11s
+   176   120  329.64503    1   79          -  329.64503      -  10.7   15s
+  1021   873  338.98894   39   55          -  331.04379      -  25.4   20s
+  1540  1332  336.27787   31   54          -  331.12381      -  25.1   25s
+  1732  1495  337.92906   32   56          -  331.12381      -  24.7   30s
+  1877  1599  358.45714   52    5          -  331.12381      -  24.7   35s
+  2006  1774  337.28210   34   59          -  331.12381      -  24.4   41s
+  2134  1889  337.74134   37   61          -  331.12381      -  23.9   47s
+  2201  1929  342.24941   36   48          -  331.12381      -  23.7   50s
+  2309  2051  338.83815   39   57          -  331.12381      -  23.6   56s
+  2356  2097  357.63252   62   34          -  331.12381      -  23.4   60s
+
+Cutting planes:
+  Gomory: 7
+  Lift-and-project: 3
+  Implied bound: 1
+  MIR: 5
+  Flow cover: 14
+  Zero half: 34
+  Lazy constraints: 12464
+
+Explored 2394 nodes (56441 simplex iterations) in 61.54 seconds (8.76 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.320000000000e+02, gap -
+
+User-callback calls 8172, time in user-callback 54.58 sec
+### best bound = 332.0
+total risk = 1020
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst33.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xf25f51a7
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.094528e+02, 324 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  109.45278    0    5          -  109.45278      -     -    0s
+     0     0  181.86585    0   57          -  181.86585      -     -    2s
+     0     0  211.60800    0   69          -  211.60800      -     -    2s
+     0     0  254.15793    0   32          -  254.15793      -     -    2s
+     0     0  279.18750    0   53          -  279.18750      -     -    4s
+     0     0  285.97266    0   42          -  285.97266      -     -    4s
+     0     0  287.47266    0   31          -  287.47266      -     -    4s
+     0     0  287.59837    0   43          -  287.59837      -     -    4s
+     0     0  288.10282    0   35          -  288.10282      -     -    4s
+     0     0  288.10282    0   27          -  288.10282      -     -    4s
+     0     0  288.10282    0   45          -  288.10282      -     -    4s
+     0     0  288.56884    0   45          -  288.56884      -     -    4s
+     0     2  288.56884    0   45          -  288.56884      -     -    4s
+   321   384  321.25795   14   40          -  297.08013      -  20.9    5s
+  1216  1348  345.55263   28   30          -  297.08013      -  20.0   10s
+  1676  1714  363.63864   36   36          -  297.08013      -  19.0   15s
+  2018  2016  369.50294   44   10          -  297.08013      -  19.0   22s
+  2197  2188  385.75577   48   18          -  297.08013      -  19.2   25s
+  2392  2347  359.87850   39   39          -  297.08013      -  19.1   30s
+  2461  2405 infeasible   57               -  298.29762      -  19.1   38s
+  2580  2509  328.52786    9   74          -  298.29762      -  19.8   40s
+  2725  2625 infeasible   38               -  298.29762      -  20.2   45s
+  3005  2908  340.30973   15   67          -  298.29762      -  20.1   50s
+  3147  3038  343.87399   16   74          -  298.29762      -  20.1   55s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 5
+  Clique: 7
+  MIR: 15
+  Flow cover: 2
+  Zero half: 2
+  Lazy constraints: 16215
+
+Explored 3242 nodes (66162 simplex iterations) in 64.97 seconds (3.31 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.990000000000e+02, gap -
+
+User-callback calls 7142, time in user-callback 62.15 sec
+### best bound = 299.0
+total risk = 968
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst34.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x9fd6d104
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.229412e+02, 333 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  122.94118    0    3          -  122.94118      -     -    0s
+     0     0  178.49265    0   76          -  178.49265      -     -    2s
+     0     0  204.15109    0   81          -  204.15109      -     -    2s
+     0     0  240.81569    0   42          -  240.81569      -     -    2s
+     0     0  263.03333    0   58          -  263.03333      -     -    4s
+     0     0  281.31913    0   60          -  281.31913      -     -    4s
+     0     0  288.18218    0   77          -  288.18218      -     -    4s
+     0     0  289.83490    0   77          -  289.83490      -     -    4s
+     0     0  289.95098    0   73          -  289.95098      -     -    4s
+     0     0  295.61049    0   42          -  295.61049      -     -    4s
+     0     0  295.73448    0   35          -  295.73448      -     -    4s
+     0     0  296.16316    0   35          -  296.16316      -     -    5s
+     0     0  297.55062    0   69          -  297.55062      -     -    5s
+     0     0  297.92377    0   70          -  297.92377      -     -    5s
+     0     0  297.92377    0   70          -  297.92377      -     -    5s
+     0     0  298.55185    0   67          -  298.55185      -     -    5s
+     0     0  299.20845    0   65          -  299.20845      -     -    5s
+     0     0  299.20845    0   56          -  299.20845      -     -    5s
+     0     0  299.60432    0   56          -  299.60432      -     -    5s
+     0     2  299.60432    0   56          -  299.60432      -     -    6s
+   223   273  311.52500    9   46          -  303.64804      -  14.5   11s
+   664   725  320.97143   19   32          -  304.97347      -  18.1   15s
+  1038  1083  333.71429   32   13          -  304.97347      -  17.4   21s
+  1140  1166  337.42727   37   15          -  304.97347      -  17.4   25s
+  1262  1275  333.38571   32   19          -  304.97347      -  17.7   30s
+  1475  1487  339.61240   46   23          -  304.97347      -  17.7   35s
+  1566  1570  339.87745   48   22          -  304.97347      -  17.6   40s
+  1709  1711  343.69118   50    1          -  304.97347      -  17.3   45s
+  1804  1807  349.34765   52   16          -  304.97347      -  17.1   50s
+  1945  1938  347.95200   56   20          -  304.97347      -  17.0   56s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 11
+  Clique: 14
+  MIR: 45
+  Zero half: 4
+  Mod-K: 1
+  Relax-and-lift: 1
+  PSD: 3
+  Lazy constraints: 14165
+
+Explored 2037 nodes (35797 simplex iterations) in 61.46 seconds (3.81 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.050000000000e+02, gap -
+
+User-callback calls 4833, time in user-callback 58.42 sec
+### best bound = 305.0
+total risk = 955
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst35.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xe46fe0b7
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 9.421111e+01, 325 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   94.21111    0    7          -   94.21111      -     -    0s
+     0     0  171.13750    0   74          -  171.13750      -     -    2s
+     0     0  200.39437    0   61          -  200.39437      -     -    2s
+     0     0  241.75417    0   33          -  241.75417      -     -    2s
+     0     0  262.78559    0   76          -  262.78559      -     -    3s
+     0     0  267.85128    0   62          -  267.85128      -     -    3s
+     0     0  273.58019    0   70          -  273.58019      -     -    3s
+     0     0  275.19116    0   70          -  275.19116      -     -    4s
+     0     0  275.19116    0   76          -  275.19116      -     -    4s
+     0     0  277.27500    0   57          -  277.27500      -     -    4s
+     0     0  278.15000    0   56          -  278.15000      -     -    4s
+     0     0  278.15833    0   56          -  278.15833      -     -    4s
+     0     0  280.47033    0   60          -  280.47033      -     -    4s
+     0     0  281.07939    0   38          -  281.07939      -     -    4s
+     0     0  281.09305    0   42          -  281.09305      -     -    4s
+     0     0  281.12597    0   61          -  281.12597      -     -    4s
+     0     0  281.36667    0   61          -  281.36667      -     -    4s
+     0     2  281.36667    0   61          -  281.36667      -     -    4s
+    95   126  290.80412    6   68          -  284.97976      -  12.3    5s
+   959  1040  312.32059   24   37          -  285.03451      -  19.2   10s
+  1244  1314  330.98044   30   20          -  285.03451      -  21.4   15s
+  1584  1619  317.36750   23   51          -  285.03451      -  21.1   20s
+  1900  1868  345.84987   21   34          -  285.03451      -  21.3   25s
+  2043  2005  362.23590   61   15          -  285.03451      -  21.2   30s
+  2176  2128  368.69167   66   20          -  285.03451      -  21.6   36s
+  2355  2251  316.82403   13   59          -  285.18211      -  21.6   40s
+  2499  2426  311.90552   13   65          -  285.18211      -  21.6   45s
+  2605  2519 infeasible   69               -  285.18211      -  21.4   50s
+  2694  2609  314.70147   17   62          -  285.18211      -  21.3   55s
+  2796  2693  318.84263   18   50          -  285.18211      -  21.1   60s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 9
+  Clique: 10
+  MIR: 31
+  Flow cover: 5
+  GUB cover: 1
+  Zero half: 4
+  RLT: 1
+  Relax-and-lift: 2
+  BQP: 1
+  PSD: 6
+  Lazy constraints: 14893
+
+Explored 2842 nodes (61060 simplex iterations) in 61.05 seconds (2.90 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.860000000000e+02, gap -
+
+User-callback calls 6376, time in user-callback 58.51 sec
+### best bound = 286.0
+total risk = 1047
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst36.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x3336fd2c
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.246560e+02, 348 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  124.65600    0    5          -  124.65600      -     -    0s
+     0     0  192.97097    0   81          -  192.97097      -     -    2s
+     0     2  196.91053    0   81          -  196.91053      -     -    2s
+    13    10  313.02778    1   62          -  313.02778      -   0.5    5s
+    86    60  339.81908    1   81          -  339.81908      -  26.0   10s
+   141   114  345.26846   30   45          -  344.45141      -  30.9   15s
+  1265  1149  356.93006   50   54          -  345.09414      -  27.3   20s
+  1461  1379  373.27067   52   23          -  345.09414      -  27.7   25s
+  1696  1620  367.53825   54   11          -  345.09414      -  28.4   30s
+  1918  1835  371.97014   59   40          -  345.09414      -  28.2   35s
+  2067  1989  373.97156   61   29          -  345.09414      -  28.3   41s
+  2131  2042  368.61540   60   52          -  345.09414      -  28.3   45s
+  2234  2131  368.94138   63   30          -  345.09414      -  28.2   50s
+  2304  2209  376.76607   65   25          -  345.09414      -  28.3   55s
+
+Cutting planes:
+  Gomory: 10
+  Cover: 1
+  Implied bound: 2
+  MIR: 6
+  Flow cover: 17
+  Zero half: 42
+  RLT: 1
+  Lazy constraints: 13056
+
+Explored 2390 nodes (67930 simplex iterations) in 61.02 seconds (6.89 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.460000000000e+02, gap -
+
+User-callback calls 7569, time in user-callback 55.34 sec
+### best bound = 346.0
+total risk = 1035
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst37.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x2e45450b
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.258947e+02, 340 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  125.89474    0    3          -  125.89474      -     -    0s
+     0     0  191.70000    0   81          -  191.70000      -     -    2s
+     0     0  216.90000    0   69          -  216.90000      -     -    2s
+     0     0  250.35200    0   44          -  250.35200      -     -    2s
+     0     0  281.53033    0   54          -  281.53033      -     -    3s
+     0     0  292.96200    0   27          -  292.96200      -     -    3s
+     0     0  294.20000    0   32          -  294.20000      -     -    3s
+     0     0  294.66667    0   21          -  294.66667      -     -    3s
+     0     0  294.66667    0   33          -  294.66667      -     -    3s
+     0     0  294.66667    0   31          -  294.66667      -     -    3s
+     0     2  300.70000    0   72          -  300.70000      -     -    4s
+   159   192  313.69196    7   70          -  307.78848      -  10.1    5s
+  1416  1543  344.28500   37   32          -  309.68853      -  14.0   10s
+  1961  1988  330.55417   13   46          -  309.74444      -  15.4   15s
+  2232  2219  361.72658   36   34          -  309.74444      -  16.0   20s
+  2391  2370  364.78187   35   38          -  309.74444      -  16.3   25s
+  2577  2545  367.15142   37   32          -  309.74444      -  16.7   30s
+  2693  2672  343.19600   22   33          -  309.74444      -  16.8   35s
+  2858  2824  345.59423   24   44          -  309.74444      -  16.8   41s
+  2981  2935  347.84286   25   21          -  309.74444      -  16.8   46s
+  3105  3052  353.32500   28   12          -  309.74444      -  16.6   51s
+  3187  3124  353.13571   30   12          -  309.74444      -  16.6   56s
+  3300  3226  358.56250   25   55          -  309.74444      -  16.8   60s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 18
+  Clique: 12
+  MIR: 19
+  Flow cover: 1
+  Zero half: 5
+  Mod-K: 1
+  RLT: 1
+  Lazy constraints: 16138
+
+Explored 3331 nodes (57035 simplex iterations) in 60.25 seconds (3.12 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.100000000000e+02, gap -
+
+User-callback calls 7317, time in user-callback 57.39 sec
+### best bound = 310.0
+total risk = 998
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst38.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc12ce80c
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.236370e+02, 347 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  123.63704    0    3          -  123.63704      -     -    0s
+     0     0  185.28153    0   90          -  185.28153      -     -    2s
+     0     2  185.28153    0   90          -  185.28153      -     -    2s
+    10     8  314.84142    1   60          -  314.84142      -   0.5    5s
+    80    55  330.17847    1  111          -  330.17847      -   0.1   10s
+   141    97  333.23926    1   86          -  333.23926      -  14.7   15s
+   186   128  335.88122    1   98          -  335.88122      -  20.1   20s
+   271   186  337.47017    1   83          -  337.47017      -  22.1   25s
+   350   239  340.20116    1  110          -  340.20116      -  17.1   30s
+   509   376  351.74341   57   67          -  341.29113      -  26.1   35s
+  1272   967  351.01333   68   46          -  341.51173      -  31.1   41s
+  1459  1141  353.67868   70   37          -  341.51173      -  31.4   45s
+  1583  1283  354.48031   68   47          -  341.51173      -  31.3   50s
+  1744  1454  357.45000   75    7          -  341.51173      -  30.9   56s
+  1840  1525  365.80000   79    1          -  341.51173      -  30.6   60s
+
+Cutting planes:
+  Gomory: 6
+  Lift-and-project: 1
+  Implied bound: 3
+  MIR: 2
+  Flow cover: 28
+  Zero half: 54
+  RLT: 1
+  Lazy constraints: 9657
+
+Explored 1882 nodes (57602 simplex iterations) in 62.43 seconds (14.90 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.420000000000e+02, gap -
+
+User-callback calls 9867, time in user-callback 50.85 sec
+### best bound = 342.0
+total risk = 984
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst39.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc14c8336
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.099742e+02, 317 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  109.97419    0    7          -  109.97419      -     -    0s
+     0     0  167.57857    0   84          -  167.57857      -     -    2s
+     0     2  167.57857    0   84          -  167.57857      -     -    2s
+     9     8  286.46935    1   47          -  286.46935      -   1.2    5s
+    81    57  309.33929    1   78          -  309.33929      -  26.3   12s
+   118    82  313.29419    1   71          -  313.29419      -  18.1   15s
+   161   112  314.12812    1   69          -  314.12812      -  22.9   20s
+   558   430  320.39243   45   41          -  315.60837      -  25.1   25s
+   993   806  327.21290   51   28          -  315.60837      -  24.5   30s
+  1197  1009  327.53108   44   54          -  315.60837      -  24.9   36s
+  1301  1155  327.64783   54    8          -  315.60837      -  24.9   40s
+  1399  1238  328.96552   59    7          -  315.60837      -  24.6   45s
+  1503  1350  330.40000   58    2          -  315.60837      -  24.9   51s
+  1541  1389  329.69565   58    7          -  315.60837      -  25.0   55s
+
+Cutting planes:
+  Gomory: 15
+  MIR: 3
+  Flow cover: 28
+  Zero half: 35
+  RLT: 3
+  Lazy constraints: 10427
+
+Explored 1616 nodes (41126 simplex iterations) in 60.31 seconds (9.25 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.160000000000e+02, gap -
+
+User-callback calls 7293, time in user-callback 52.95 sec
+### best bound = 316.0
+total risk = 1029
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst40.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xeeda7d82
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.139245e+02, 330 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  113.92453    0    3          -  113.92453      -     -    0s
+     0     0  189.20200    0   85          -  189.20200      -     -    2s
+     0     2  194.20200    0   85          -  194.20200      -     -    2s
+    15    12  315.12353    1   47          -  315.12353      -   0.0    5s
+    60    43  326.41510    1   96          -  326.41510      -  26.4   10s
+   182   158  352.35620   34   72          -  329.75251      -  29.5   16s
+   981   934  340.91829   51   24          -  329.75251      -  27.8   20s
+  1230  1186  361.86667   50   22          -  329.75251      -  27.6   25s
+  1474  1391  345.67778   50   35          -  329.75251      -  28.0   30s
+  1642  1592  366.28108   57   13          -  329.75251      -  27.9   36s
+  1735  1633  350.23944   42   42          -  329.75251      -  27.9   41s
+  1784  1701  368.11154   59    4          -  329.75251      -  27.9   45s
+  1884  1790  385.90000   60    9          -  329.75251      -  27.9   50s
+  1949  1839  355.55058   51   33          -  329.75251      -  27.8   55s
+  2025  1919  359.56457   49   44          -  329.75251      -  27.9   60s
+
+Cutting planes:
+  Gomory: 10
+  Lift-and-project: 5
+  Implied bound: 1
+  MIR: 6
+  Flow cover: 20
+  Zero half: 32
+  RLT: 2
+  Lazy constraints: 14160
+
+Explored 2056 nodes (57871 simplex iterations) in 63.77 seconds (7.32 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.300000000000e+02, gap -
+
+User-callback calls 6593, time in user-callback 57.72 sec
+### best bound = 330.0
+total risk = 999
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst41.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x976b0a11
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.203667e+02, 311 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  120.36667    0    5          -  120.36667      -     -    0s
+     0     0  197.35000    0   80          -  197.35000      -     -    2s
+     0     0  226.04652    0   65          -  226.04652      -     -    2s
+     0     0  255.05238    0   45          -  255.05238      -     -    2s
+     0     0  283.00459    0   66          -  283.00459      -     -    3s
+     0     0  286.72393    0   65          -  286.72393      -     -    3s
+     0     0  294.02436    0   22          -  294.02436      -     -    3s
+     0     0  295.39188    0   37          -  295.39188      -     -    3s
+     0     0  295.75417    0   37          -  295.75417      -     -    3s
+     0     2  295.75417    0   37          -  295.75417      -     -    4s
+   479   576  321.27891   14   61          -  306.16631      -  14.8    5s
+  1885  1963  376.06000   47   11          -  306.16631      -  15.1   10s
+  2109  2133  393.76458   49   21          -  306.16631      -  15.4   15s
+  2427  2347  387.71250   58    2          -  306.16631      -  15.6   20s
+  2584  2448  321.00128   12   68          -  306.16631      -  15.9   25s
+  2719  2596  332.50851   11   81          -  306.16631      -  16.0   30s
+  2951  2827  408.92925   76   10          -  306.16631      -  16.0   36s
+  3017  2856  320.80818   10   58          -  306.16631      -  15.9   40s
+  3098  2931  334.86989   14   83          -  306.16631      -  16.0   45s
+  3186  3010  327.81391   15   81          -  306.16631      -  16.1   50s
+  3244  3075  416.11471   83   12          -  306.16631      -  16.2   55s
+  3325  3145  339.35700   15   60          -  306.16631      -  16.4   60s
+
+Cutting planes:
+  Gomory: 14
+  Lift-and-project: 1
+  Implied bound: 6
+  Clique: 4
+  MIR: 20
+  Flow cover: 1
+  GUB cover: 1
+  Zero half: 6
+  Lazy constraints: 14933
+
+Explored 3350 nodes (56130 simplex iterations) in 61.50 seconds (2.38 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.070000000000e+02, gap -
+
+User-callback calls 7311, time in user-callback 58.76 sec
+### best bound = 307.0
+total risk = 1003
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst42.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x947e851b
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.304926e+02, 349 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  130.49259    0    8          -  130.49259      -     -    0s
+     0     0  192.33421    0   77          -  192.33421      -     -    2s
+     0     0  223.65893    0   74          -  223.65893      -     -    2s
+     0     0  266.91667    0   45          -  266.91667      -     -    2s
+     0     0  294.83369    0   78          -  294.83369      -     -    3s
+     0     0  296.89359    0   79          -  296.89359      -     -    3s
+     0     0  296.89359    0   79          -  296.89359      -     -    3s
+     0     0  300.16837    0   47          -  300.16837      -     -    3s
+     0     0  302.07937    0   69          -  302.07937      -     -    3s
+     0     0  307.37400    0   78          -  307.37400      -     -    4s
+     0     0  307.51617    0   72          -  307.51617      -     -    4s
+     0     0  310.62421    0   91          -  310.62421      -     -    4s
+     0     0  311.75291    0   87          -  311.75291      -     -    4s
+     0     0  311.75291    0   88          -  311.75291      -     -    4s
+     0     0  311.75291    0   78          -  311.75291      -     -    4s
+     0     0  311.75291    0   93          -  311.75291      -     -    4s
+     0     0  312.26472    0   93          -  312.26472      -     -    4s
+     0     2  312.26472    0   93          -  312.26472      -     -    4s
+    95   128  323.22199    6   65          -  317.73781      -  17.6    5s
+  1456  1553  332.50438   10   77          -  317.83111      -  17.5   10s
+  1733  1786  331.50000   13   62          -  317.83111      -  18.2   15s
+  2046  2071  333.44648   16   71          -  317.83111      -  18.4   21s
+  2216  2225  338.24921   19   68          -  317.83111      -  18.3   27s
+  2330  2324  340.08433   20   69          -  317.83111      -  18.2   30s
+  2423  2412  347.37129   20   67          -  317.83111      -  18.3   35s
+  2601  2579  335.72817   10   88          -  317.83111      -  18.4   40s
+  2719  2694  347.64652   23   61          -  317.83111      -  18.3   45s
+  2756  2728  342.84403   23   67          -  317.83111      -  18.3   50s
+  2829  2794  352.36111   23   60          -  317.83111      -  18.5   56s
+  2904  2865  349.55330   15   53          -  317.83111      -  18.5   60s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 5
+  Clique: 3
+  MIR: 39
+  Flow cover: 1
+  Zero half: 8
+  Mod-K: 1
+  RLT: 1
+  PSD: 1
+  Lazy constraints: 14527
+
+Explored 2935 nodes (55463 simplex iterations) in 61.04 seconds (2.57 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.180000000000e+02, gap -
+
+User-callback calls 6561, time in user-callback 58.54 sec
+### best bound = 318.0
+total risk = 1048
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst43.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc80ba6a3
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.197250e+02, 334 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  119.72500    0    5          -  119.72500      -     -    0s
+     0     0  202.50667    0   84          -  202.50667      -     -    2s
+     0     2  209.01471    0   84          -  209.01471      -     -    2s
+    17    13  319.99866    1   63          -  319.99866      -   0.5    5s
+    80    56  337.37338    1   80          -  337.37338      -  25.3   11s
+   130    90  343.33136    1   99          -  343.33136      -  15.6   15s
+   838   748  359.98450   34   34          -  347.86302      -  29.4   20s
+  1524  1463  372.60000   48   22          -  347.86302      -  29.2   25s
+  2290  2182  382.41497   64   30          -  347.86302      -  27.4   31s
+  2512  2372  391.64600   46   54          -  347.86302      -  27.1   36s
+  2681  2611  396.96667   70    6          -  347.86302      -  26.9   43s
+  2772  2699  399.51250   73   11          -  347.86302      -  26.9   46s
+  2879  2786  379.91312   60   29          -  347.86302      -  26.6   50s
+  3020  2906  356.88433   28   63          -  347.86302      -  26.5   55s
+  3119  2983  397.76667   61   16          -  347.86302      -  26.3   60s
+  3170  2984  402.18204   53   21          -  347.86302      -  26.2   65s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 1
+  MIR: 9
+  Flow cover: 19
+  Zero half: 28
+  Lazy constraints: 13955
+
+Explored 3174 nodes (83715 simplex iterations) in 65.11 seconds (8.90 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.480000000000e+02, gap -
+
+User-callback calls 9650, time in user-callback 58.12 sec
+### best bound = 348.0
+total risk = 1032
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst44.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x04623e87
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.217235e+02, 332 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  121.72353    0    2          -  121.72353      -     -    0s
+     0     0  187.35556    0   81          -  187.35556      -     -    2s
+     0     0  233.13103    0   52          -  233.13103      -     -    2s
+     0     0  284.25380    0   35          -  284.25380      -     -    2s
+     0     0  315.40090    0   62          -  315.40090      -     -    4s
+     0     0  320.30270    0   53          -  320.30270      -     -    4s
+     0     0  324.14657    0   48          -  324.14657      -     -    4s
+     0     0  325.64286    0   54          -  325.64286      -     -    4s
+     0     0  325.64286    0   54          -  325.64286      -     -    4s
+     0     2  326.91905    0   57          -  326.91905      -     -    4s
+     1     5  327.76429    1   52          -  327.76429      -  19.0    5s
+  1070  1220  381.47981   30   27          -  333.75238      -  15.5   10s
+  1403  1480  401.15842   37   31          -  333.75238      -  16.1   15s
+  1644  1693  404.18525   40   18          -  333.75238      -  16.7   20s
+  1820  1832  386.56203   26   34          -  333.75238      -  16.8   26s
+  1989  1972  366.62957   14   62          -  333.75238      -  17.0   30s
+  2096  2104  427.84727   52    4          -  333.75238      -  16.9   35s
+  2160  2139  393.59000   35   14          -  333.75238      -  16.9   40s
+  2183  2172  469.36111   64    7          -  333.75238      -  16.9   45s
+  2312  2263 infeasible   61               -  335.00238      -  16.9   50s
+  2392  2324 infeasible   57               -  335.00238      -  16.9   55s
+  2482  2396  402.34231   36    8          -  335.00238      -  16.9   61s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 6
+  Clique: 5
+  MIR: 26
+  Flow cover: 1
+  Zero half: 2
+  RLT: 1
+  Lazy constraints: 15397
+
+Explored 2510 nodes (43460 simplex iterations) in 63.85 seconds (2.43 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.360000000000e+02, gap -
+
+User-callback calls 5644, time in user-callback 61.40 sec
+### best bound = 336.0
+total risk = 957
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst45.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xc83f085b
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.153154e+02, 340 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  115.31538    0    8          -  115.31538      -     -    0s
+     0     0  172.16936    0   94          -  172.16936      -     -    2s
+     0     0  193.25476    0   54          -  193.25476      -     -    2s
+     0     0  229.72929    0   31          -  229.72929      -     -    2s
+     0     0  255.14081    0   77          -  255.14081      -     -    3s
+     0     0  267.87356    0   54          -  267.87356      -     -    3s
+     0     0  273.45014    0   45          -  273.45014      -     -    3s
+     0     0  277.27857    0   58          -  277.27857      -     -    4s
+     0     0  277.56177    0   60          -  277.56177      -     -    4s
+     0     0  278.70074    0   49          -  278.70074      -     -    4s
+     0     0  279.20074    0   49          -  279.20074      -     -    4s
+     0     0  279.31996    0   54          -  279.31996      -     -    4s
+     0     0  279.96702    0   52          -  279.96702      -     -    4s
+     0     2  279.96702    0   50          -  279.96702      -     -    4s
+    62    94  285.09653    6   60          -  285.09653      -  13.8    5s
+   860   906  322.33780   23   57          -  286.83939      -  19.7   10s
+  1380  1439  352.95714   40   11          -  286.83939      -  22.3   15s
+  1597  1615  359.07619   45   26          -  286.83939      -  22.0   21s
+  1820  1838  361.71818   48   12          -  286.83939      -  21.9   26s
+  1930  1895  322.68932   15   60          -  286.83939      -  21.5   30s
+  2058  2043  370.22857   55   10          -  286.83939      -  21.5   35s
+  2180  2156  377.96000   59    5          -  286.83939      -  21.4   43s
+  2191  2156  343.31333   37    9          -  286.83939      -  21.4   45s
+  2284  2253  381.75556   61    2          -  286.83939      -  21.6   50s
+  2387  2352  390.11304   63    9          -  286.83939      -  21.6   56s
+  2454  2385  328.15221   16   64          -  286.83939      -  21.5   60s
+
+Cutting planes:
+  Gomory: 7
+  Lift-and-project: 1
+  Implied bound: 3
+  Clique: 4
+  MIR: 35
+  Zero half: 5
+  Mod-K: 1
+  PSD: 2
+  Lazy constraints: 15749
+
+Explored 2457 nodes (53968 simplex iterations) in 60.66 seconds (2.45 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 2.870000000000e+02, gap -
+
+User-callback calls 5560, time in user-callback 58.37 sec
+### best bound = 287.0
+total risk = 1008
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst46.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x07a4cb2d
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.204514e+02, 333 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  120.45135    0    7          -  120.45135      -     -    0s
+     0     0  190.18232    0   72          -  190.18232      -     -    2s
+     0     0  216.35652    0   63          -  216.35652      -     -    2s
+     0     0  241.98284    0   38          -  241.98284      -     -    2s
+     0     0  263.11349    0   69          -  263.11349      -     -    3s
+     0     0  266.83057    0   57          -  266.83057      -     -    3s
+     0     0  278.37727    0   54          -  278.37727      -     -    3s
+     0     0  282.07307    0   80          -  282.07307      -     -    3s
+     0     0  288.96429    0   66          -  288.96429      -     -    3s
+     0     0  290.46429    0   74          -  290.46429      -     -    3s
+     0     0  290.46429    0   70          -  290.46429      -     -    3s
+     0     0  290.69414    0   66          -  290.69414      -     -    3s
+     0     0  292.13095    0   58          -  292.13095      -     -    4s
+     0     2  292.13095    0   58          -  292.13095      -     -    4s
+   191   234  331.25343    8   30          -  300.07605      -  11.5    5s
+  1710  1755  394.60000   45   16          -  300.07605      -  16.5   11s
+  2018  2002  393.77500   50   14          -  300.07605      -  17.1   16s
+  2245  2206  418.01429   61    7          -  300.07605      -  17.7   20s
+  2497  2438  429.50000   65   16          -  300.07605      -  18.1   25s
+  2697  2623  334.99375   26   57          -  300.07605      -  17.9   30s
+  2896  2813  461.00000   71    -          -  300.07605      -  17.9   37s
+  3003  2903  459.00000   72    -          -  301.27213      -  17.9   41s
+  3143  3028  403.82273   31   50          -  301.27213      -  17.9   46s
+  3226  3064  350.97917   18   64          -  301.27213      -  17.9   51s
+  3312  3147  348.68125   21   75          -  301.27213      -  18.0   55s
+  3399  3246  407.36610   35   54          -  301.27213      -  18.0   60s
+  3433  3246  352.75250   21   57          -  301.27213      -  18.0   68s
+
+Cutting planes:
+  Gomory: 4
+  Lift-and-project: 1
+  Implied bound: 8
+  Clique: 5
+  MIR: 42
+  Flow cover: 2
+  Zero half: 2
+  Mod-K: 2
+  RLT: 2
+  Relax-and-lift: 1
+  PSD: 1
+  Lazy constraints: 18261
+
+Explored 3436 nodes (62971 simplex iterations) in 69.62 seconds (2.74 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.020000000000e+02, gap -
+
+User-callback calls 7569, time in user-callback 66.90 sec
+### best bound = 302.0
+total risk = 1015
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst47.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x5b038524
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.250176e+02, 337 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  125.01765    0    7          -  125.01765      -     -    0s
+     0     0  196.52432    0   80          -  196.52432      -     -    2s
+     0     0  232.60141    0   64          -  232.60141      -     -    2s
+     0     0  268.54018    0   51          -  268.54018      -     -    2s
+     0     0  294.70784    0   62          -  294.70784      -     -    3s
+     0     0  301.83438    0   52          -  301.83438      -     -    3s
+     0     0  304.45556    0   24          -  304.45556      -     -    3s
+     0     0  304.73333    0   23          -  304.73333      -     -    4s
+     0     0  305.53846    0   27          -  305.53846      -     -    4s
+     0     0  310.46749    0   69          -  310.46749      -     -    4s
+     0     0  310.99780    0   78          -  310.99780      -     -    4s
+     0     0  311.04467    0   59          -  311.04467      -     -    4s
+     0     0  313.61744    0   54          -  313.61744      -     -    4s
+     0     0  314.19460    0   58          -  314.19460      -     -    4s
+     0     0  314.19460    0   62          -  314.19460      -     -    4s
+     0     0  314.45833    0   50          -  314.45833      -     -    4s
+     0     0  314.57552    0   46          -  314.57552      -     -    4s
+     0     2  315.01042    0   46          -  315.01042      -     -    4s
+    95   128  326.71176    6   63          -  323.77492      -   9.9    5s
+   810   930  351.46176   25   39          -  325.72958      -  17.5   10s
+  1171  1197  363.94444   30   30          -  325.72958      -  17.7   15s
+  1242  1241  351.25591   19   47          -  325.72958      -  18.2   20s
+  1547  1514  369.19568   20   70          -  325.72958      -  18.8   25s
+  1733  1718  388.99508   42   21          -  325.72958      -  18.9   30s
+  1890  1871  387.92973   46    1          -  325.72958      -  18.6   35s
+  2069  2007  406.12222   48   15          -  325.72958      -  18.5   40s
+  2249  2134  338.47868   10   68          -  325.72958      -  18.4   45s
+  2429  2285  370.77004   22   60          -  325.72958      -  18.2   51s
+  2526  2407  416.90541   60   17          -  325.72958      -  18.2   55s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 9
+  Clique: 6
+  MIR: 35
+  Zero half: 10
+  Mod-K: 2
+  Lazy constraints: 15755
+
+Explored 2562 nodes (47833 simplex iterations) in 64.81 seconds (2.80 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.260000000000e+02, gap -
+
+User-callback calls 5844, time in user-callback 61.74 sec
+### best bound = 326.0
+total risk = 1024
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst48.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x99bad421
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.401364e+02, 326 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  140.13636    0    8          -  140.13636      -     -    0s
+     0     0  201.61176    0   75          -  201.61176      -     -    2s
+     0     0  225.70806    0   47          -  225.70806      -     -    2s
+     0     0  273.05882    0   51          -  273.05882      -     -    2s
+     0     0  300.74714    0   69          -  300.74714      -     -    3s
+     0     0  310.99907    0   24          -  310.99907      -     -    3s
+     0     0  311.49907    0   27          -  311.49907      -     -    3s
+     0     0  311.53593    0   59          -  311.53593      -     -    3s
+     0     0  311.77385    0   59          -  311.77385      -     -    3s
+     0     2  311.77385    0   59          -  311.77385      -     -    4s
+   128   160  334.35000    7   46          -  320.57217      -  10.6    5s
+  1002  1086  377.93333   26   34          -  323.38600      -  21.1   11s
+  1483  1564  390.79286   40    9          -  323.38600      -  21.5   16s
+  1753  1775  371.90417   26   40          -  323.38600      -  21.1   21s
+  1886  1888  424.25714   52   16          -  323.38600      -  21.3   29s
+  1969  1965  421.25714   53   22          -  323.38600      -  21.8   30s
+  2191  2186  434.38423   56   28          -  323.38600      -  22.1   35s
+  2357  2336  360.72135   18   59          -  323.38600      -  21.6   40s
+  2482  2454  446.60000   64   28          -  323.38600      -  21.5   46s
+  2560  2514  450.10588   65   16          -  323.38600      -  21.5   51s
+  2634  2546  364.71714   14   79          -  323.38600      -  21.5   55s
+
+Cutting planes:
+  Gomory: 11
+  Implied bound: 10
+  Clique: 8
+  MIR: 17
+  GUB cover: 1
+  Zero half: 6
+  RLT: 3
+  Lazy constraints: 14755
+
+Explored 2823 nodes (61280 simplex iterations) in 60.58 seconds (2.99 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.240000000000e+02, gap -
+
+User-callback calls 6264, time in user-callback 57.77 sec
+### best bound = 324.0
+total risk = 1041
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst49.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0xf5a6ee41
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.203294e+02, 343 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  120.32941    0    8          -  120.32941      -     -    0s
+     0     0  191.76429    0   72          -  191.76429      -     -    1s
+     0     2  195.76428    0   72          -  195.76428      -     -    2s
+    18    14  322.38193    1   96          -  322.38193      -   0.2    5s
+    93    65  342.28460    1   88          -  342.28460      -  27.4   11s
+   302   226  350.09642   31   81          -  346.96279      -  28.6   15s
+  1495  1428  357.64129   45   67          -  347.43033      -  29.2   20s
+  1924  1752  369.60905   45   56          -  347.51493      -  29.3   25s
+  2344  2211  363.99945   41   42          -  347.51493      -  27.8   31s
+  2505  2365  392.67071   67   20          -  347.51493      -  27.6   36s
+  2605  2427  371.66094   53   52          -  347.51493      -  27.5   40s
+  2748  2586  357.33666   34   44          -  347.51493      -  27.3   45s
+  2894  2701  357.93217   35   62          -  347.51493      -  27.0   50s
+  3001  2822  369.70559   44   35          -  347.51493      -  26.9   57s
+
+Cutting planes:
+  Gomory: 10
+  Implied bound: 2
+  Projected implied bound: 2
+  MIR: 9
+  Flow cover: 29
+  Zero half: 35
+  RLT: 1
+  Lazy constraints: 13149
+
+Explored 3128 nodes (84124 simplex iterations) in 61.95 seconds (6.87 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.480000000000e+02, gap -
+
+User-callback calls 9152, time in user-callback 56.18 sec
+### best bound = 348.0
+total risk = 1067
+Set parameter LogFile to value "result118/grblog_l002.ib.bridges2.psc.edu_N-1_PSPS_SpanFalse_BCZ_TL_118_inst50.txt"
+Set parameter TimeLimit to value 60
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 11.0.2 build v11.0.2rc0 (linux64 - "Red Hat Enterprise Linux 8.10 (Ootpa)")
+
+CPU model: AMD EPYC 7742 64-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 128 physical cores, 128 logical processors, using up to 32 threads
+
+Optimize a model with 611 rows, 540 columns and 1488 nonzeros
+Model fingerprint: 0x004f8b05
+Variable types: 236 continuous, 304 integer (304 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+03]
+Presolve removed 88 rows and 83 columns
+Presolve time: 0.00s
+Presolved: 523 rows, 457 columns, 1197 nonzeros
+Variable types: 154 continuous, 303 integer (303 binary)
+
+Root relaxation: objective 1.257161e+02, 331 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  125.71613    0    3          -  125.71613      -     -    0s
+     0     0  196.07813    0   77          -  196.07813      -     -    2s
+     0     2  200.07812    0   77          -  200.07812      -     -    2s
+    15    12  327.38518    1   71          -  327.38518      -   1.1    5s
+    84    59  342.09037    1   58          -  342.09037      -  24.5   12s
+   160   143  345.39941   30   41          -  343.84255      -  27.9   15s
+   656   642  365.12752   37   48          -  344.37222      -  23.6   20s
+   984   937  370.85667   44   40          -  344.37222      -  24.3   25s
+  1287  1198  358.84490   47   48          -  344.37222      -  23.8   31s
+  1412  1344  370.36027   54   50          -  344.37222      -  24.3   35s
+  1568  1506  362.78787   46   62          -  344.37222      -  25.6   40s
+  1712  1655  381.66879   52   46          -  344.37222      -  26.0   45s
+  1808  1754  405.29375   60   36          -  344.37222      -  25.9   52s
+  1861  1800  427.52500   61   31          -  344.37222      -  25.8   55s
+  2004  1896  373.40566   55   19          -  344.37222      -  25.7   62s
+
+Cutting planes:
+  Gomory: 13
+  Implied bound: 2
+  MIR: 4
+  Flow cover: 19
+  GUB cover: 1
+  Zero half: 20
+  RLT: 1
+  Lazy constraints: 12570
+
+Explored 2010 nodes (52067 simplex iterations) in 63.35 seconds (5.71 work units)
+Thread count was 32 (of 128 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 3.450000000000e+02, gap -
+
+User-callback calls 6134, time in user-callback 58.86 sec
+### best bound = 345.0

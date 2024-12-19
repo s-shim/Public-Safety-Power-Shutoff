@@ -1,0 +1,4 @@
+Nodes,inst,totalDemand,ratioDemandRequired,totalRiskArray,minRisk,ratioRisk,Time,B&B Nodes,Security,Machine,Spanning
+118,1,4131.592553888889,0.9,1020,399.0,0.3911764705882353,54.005698919296265,1019.0,True,r015.ib.bridges2.psc.edu,False
+118,2,4131.592553888889,0.9,1130,468.0,0.41415929203539825,46.43943691253662,1091.0,True,r015.ib.bridges2.psc.edu,False
+118,3,4131.592553888889,0.9,1050,435.0,0.4142857142857143,39.468425989151,428.0,True,r015.ib.bridges2.psc.edu,False
