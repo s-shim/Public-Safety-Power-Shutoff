@@ -162,7 +162,7 @@ for l in lineArray:
         model.addConstr(LinExpr(LHS_edge1)==0, name='edge inequality1 (%s)'%l)
         model.addConstr(LinExpr(LHS_edge2)==0, name='edge inequality2 (%s)'%l)
 
-
+model._bestTotalRisk = totalRisk
 def security(model, where):
     if where == GRB.Callback.MIPSOL:
         # make a list of edges selected in the solution
