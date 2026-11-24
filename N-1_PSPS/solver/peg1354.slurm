@@ -11,6 +11,10 @@
 #SBATCH -o logs/%x_%j.out
 #SBATCH -e logs/%x_%j.err
 
+# start from a clean environment: modules or PYTHONPATH inherited from the submitting
+# shell (e.g. a py-pandas module for Python 3.9) break the venv's numpy/pandas imports
+module purge 2>/dev/null
+unset PYTHONPATH PYTHONHOME
 source $HOME/psps-env/bin/activate
 source $SLURM_SUBMIT_DIR/lic.sh
 

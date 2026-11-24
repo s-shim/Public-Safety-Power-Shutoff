@@ -33,12 +33,19 @@ submit () {   # $1 inst, $2 families, $3 level
   if squeue -u $USER -h -o "%k" | grep -qx "inst$1_$2_L$3"; then
     echo "skip inst$1 $2 L$3 (already queued)"; return
   fi
+  # loop guard: a run that crashes before Gurobi writes its log is never "done";
+  # never submit the same run more than twice
+  tries=$(grep -cx "inst$1_$2_L$3" logs/submitted.txt 2>/dev/null)
+  if [ "${tries:-0}" -ge 2 ]; then
+    echo "skip inst$1 $2 L$3 (submitted twice already; check logs/*.err)"; return
+  fi
   lane=$(pick_lane)
   if ! sbatch -J "psps_lane$lane" --comment="inst$1_$2_L$3" --dependency=singleton \
          --export=ALL,RUNARGS="--inst $1 --families $2 --level $3 --mipfocus 3" peg1354.slurm; then
     echo "queue limit reached; the rest will be submitted automatically as jobs finish"
     return 1
   fi
+  echo "inst$1_$2_L$3" >> logs/submitted.txt
 }
 
 case "$1" in
