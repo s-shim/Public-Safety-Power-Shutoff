@@ -32,6 +32,10 @@ ap.add_argument('--lines', required=True)
 ap.add_argument('--opt', required=True)
 ap.add_argument('--out', default='dc_results')
 ap.add_argument('--unlimited', type=float, default=99999)
+ap.add_argument('--free', action='store_true',
+                help="model's demand definition: 0 <= d_i <= dbar_i free at each energized bus, "
+                     "report the max total served against target = frac * sum(dbar)")
+ap.add_argument('--frac', type=float, default=0.9)
 ap.add_argument('--limits', default=None, help='CSV with Line, Normal/Emergency Flow Limit (MW) overriding the lines file')
 args = ap.parse_args()
 
@@ -48,7 +52,12 @@ on_bus = [i for i in nodes['Node'] if val.get('X[%s]' % i, 0) > 0.5]
 on_line = [l for l in lines['Line'] if val.get('Z[%s]' % l, 0) > 0.5]
 bidx = {b: k for k, b in enumerate(on_bus)}
 gmax = dict(zip(nodes['Node'], nodes['max_generation']))
-dem = {i: max(0.0, val.get('D[%s]' % i, 0.0)) for i in on_bus}
+if args.free:
+    dbar = dict(zip(nodes['Node'], nodes['Load']))
+    dem = {i: max(0.0, dbar[i]) for i in on_bus}
+    target = args.frac * nodes['Load'].clip(lower=0).sum()
+else:
+    dem = {i: max(0.0, val.get('D[%s]' % i, 0.0)) for i in on_bus}
 L = lines.set_index('Line').loc[on_line]
 gen_bus = [i for i in on_bus if gmax[i] > 0]
 ref = 1 if 1 in bidx else on_bus[0]
@@ -117,6 +126,14 @@ summary = dict(run=name, energized_buses=len(on_bus), energized_lines=len(on_lin
                cont_max_shed_pct=round(100 * float(df['shed_mw'].max()) / served, 3) if len(df) and served else 0.0,
                cont_mean_shed_mw=round(float(df['shed_mw'].mean()), 3) if len(df) else 0.0,
                seconds=round(time.time() - t0, 1))
+if args.free:
+    worst = served - (float(df['shed_mw'].max()) if len(df) else base_shed)
+    summary.update(mode='free', target_mw=round(target, 2),
+                   base_max_served_mw=round(served - base_shed, 2),
+                   cont_min_served_mw=round(worst, 2),
+                   base_shortfall_mw=round(max(0.0, target - (served - base_shed)), 2),
+                   cont_max_shortfall_mw=round(max(0.0, target - worst), 2),
+                   cont_below_target=int((served - df['shed_mw'] < target - 1e-3).sum()) if len(df) else 0)
 summary = {k: (v.item() if hasattr(v, 'item') else v) for k, v in summary.items()}
 json.dump(summary, open(os.path.join(args.out, 'dcsummary_%s.json' % name), 'w'), indent=1)
 print(summary)
