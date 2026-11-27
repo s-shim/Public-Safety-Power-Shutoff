@@ -32,10 +32,15 @@ ap.add_argument('--lines', required=True)
 ap.add_argument('--opt', required=True)
 ap.add_argument('--out', default='dc_results')
 ap.add_argument('--unlimited', type=float, default=99999)
+ap.add_argument('--limits', default=None, help='CSV with Line, Normal/Emergency Flow Limit (MW) overriding the lines file')
 args = ap.parse_args()
 
 nodes = pd.read_csv('%s/nodes_%d.csv' % (args.data, args.nbus))
 lines = pd.read_csv(args.lines)
+if args.limits:
+    lim = pd.read_csv(args.limits).set_index('Line')
+    for col in ('Normal Flow Limit (MW)', 'Emergency Flow Limit (MW)'):
+        lines[col] = lines['Line'].map(lim[col])
 sol = pd.read_csv(args.opt)
 val = dict(zip(sol['varName'], sol['varVal']))
 
