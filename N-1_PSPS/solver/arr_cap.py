@@ -49,9 +49,16 @@ ap.add_argument('--phase2', type=float, default=18 * 3600, help='time limit of p
 ap.add_argument('--kappa', type=float, default=0.8, help='initial seed = 0.5 + kappa (z_start - 0.5)')
 ap.add_argument('--kappa_reset', type=float, default=0.6, help='reset seed = 0.5 + kappa_reset (z_best - 0.5)')
 ap.add_argument('--seed', type=int, default=0)
+ap.add_argument('--total', type=float, default=0,
+                help='overall time limit (s) for phase 1 followed by phase 2; overrides --phase1/--phase2')
+ap.add_argument('--independent', action='store_true',
+                help='workers do not share the best solution; each saves its own phase-1 solution and stops '
+                     'after phase 1 when --phase2 0')
 ap.add_argument('--out', default='results_arr')
 ap.add_argument('--unlimited', type=float, default=99999)
 args = ap.parse_args()
+if args.total > 0:
+    args.phase1, args.phase2 = args.total, 0.0      # phase 1 may use all of it; phase 2 runs until the end
 
 UNL = args.unlimited
 
@@ -168,21 +175,28 @@ def better(a, b):
 
 
 # ------------------------------------------------------------------ ARR worker
-def worker(w, shared, lock, t0):
+def worker(w, shared, lock, t0, name):
     rng = np.random.default_rng(args.seed * 1000 + w)
     order = []
     with lock:
         zbest = np.frombuffer(shared['z'], dtype=float).copy(); best = shared['best']
+        lphase = shared['phase']
     seed = 0.5 + args.kappa * (zbest - 0.5)
     nlocal, trial = 0, 0
     while True:
         el = time.time() - t0
-        with lock:
-            phase = shared['phase']
-            if (phase == 1 and el > args.phase1) or el > args.phase1 + args.phase2 or shared['phase'] == 3:
+        if args.independent:
+            phase = lphase
+            if el > args.phase1 + args.phase2 or (phase == 2 and args.phase2 <= 0 and args.total <= 0):
+                save(zbest, 'w%d' % w, name)
                 return
-            if better(shared['best'], best):                  # adopt the global best
-                best = shared['best']; zbest = np.frombuffer(shared['z'], dtype=float).copy()
+        else:
+            with lock:
+                phase = shared['phase']
+                if el > args.phase1 + args.phase2:
+                    return
+                if better(shared['best'], best):                  # adopt the global best
+                    best = shared['best']; zbest = np.frombuffer(shared['z'], dtype=float).copy()
         trial += 1
         r0, r1 = rng.random(NL), rng.random(NL)
         z = np.where(seed * r0 < (1 - seed) * (1 - r1), 0.0, 1.0)
@@ -210,7 +224,16 @@ def worker(w, shared, lock, t0):
                 if st != 'topo':
                     cand = (min(0.0, dcap - DMIN), risk)
                     ok = (st == 'ok') if phase == 2 else (st == 'ok' or better(cand, best))
-                    if ok and better(cand, best):
+                    if ok and better(cand, best) and args.independent:
+                        best = cand; zbest = zc
+                        if cand[0] >= -1e-6 and lphase == 1:
+                            lphase = 2
+                            save(zbest, 'phase1_w%d' % w, name)
+                        with lock:
+                            with open(shared['log'], 'a') as f:
+                                f.write('%.1f,%d,%d,%d,%.2f,%.1f,%d,%d\n' % (
+                                    time.time() - t0, w, trial, lphase, dcap, risk, len(vb), len(onl)))
+                    elif ok and better(cand, best):
                         with lock:
                             if better(cand, shared['best']):
                                 shared['best'] = cand; shared['z'] = zc.tobytes()
@@ -255,18 +278,24 @@ if __name__ == '__main__':
         f.write('0,-1,0,%d,%.2f,%.1f,%d,%d\n' % (shared['phase'], dcap, risk, len(vb), len(on)))
     lock = mgr.Lock()
     t0 = time.time()
-    procs = [mp.Process(target=worker, args=(w, shared, lock, t0)) for w in range(args.workers)]
+    procs = [mp.Process(target=worker, args=(w, shared, lock, t0, name)) for w in range(args.workers)]
     for p in procs:
         p.start()
-    phase1_saved = False
+    phase1_saved = args.independent
     while any(p.is_alive() for p in procs):
         time.sleep(30)
         if shared['phase'] == 2 and not phase1_saved:
             save(np.frombuffer(shared['z'], dtype=float), 'phase1', name); phase1_saved = True
-        if shared['phase'] == 1 and time.time() - t0 > args.phase1:
+        if shared['phase'] == 1 and time.time() - t0 > args.phase1 + 600:
             break
     for p in procs:
         p.join(timeout=60)
+    if args.independent:
+        lg = pd.read_csv(shared['log'])
+        last = lg[lg.worker >= 0].groupby('worker').tail(1)
+        print('workers that reached phase 2: %d of %d; best Dcap %.1f MW'
+              % ((last.phase == 2).sum(), args.workers, lg.dcap.max()), flush=True)
+        raise SystemExit
     zb = np.frombuffer(shared['z'], dtype=float)
     save(zb, 'final', name)
     b = shared['best']
